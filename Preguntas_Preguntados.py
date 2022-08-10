@@ -307,7 +307,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '2- Del Potro\n'
                                '3- Novak Djokovic\n'
                                '4- Roger Federer\n>>>')
-            if respuestas == '2':
+            if respuestas == '1':
                 print('Correcto')
                 correctos += 1
             else:
@@ -447,3 +447,4 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+
