@@ -1,8 +1,5 @@
 import random
-
-from Preguntas_Preguntados import Preguntas_Ciencia,Preguntas_Deporte,Preguntas_Geografia,Preguntas_Historia,Preguntas_Arte,preguntas_deporte,Preguntas_Entretenimiento,preguntas_ciencia
-from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2
-
+from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2,preguntas_ciencia,preguntas_deporte,preguntas_geografia
 
 if __name__ == "__main__":
     incorrectos = 0
