@@ -14,5 +14,9 @@ if __name__ == "__main__":
             numero_random_2 = random.randint(1, 20)
             if numero_random_1 == 1:
                 preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos)
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
             elif numero_random_1 == 2:
                 preguntas_deporte(numero_random_1, numero_random_2, correctos, incorrectos)
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
