@@ -126,7 +126,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 4\n'
                                '2- 5\n'
                                '3- 6\n'
-                               '4- 9\n')
+                               '4- 9\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -138,7 +138,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Cavaliers\n'
                                '2- Lakers\n'
                                '3- Miami Heat\n'
-                               '4- Todas son correctas\n')
+                               '4- Todas son correctas\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -150,7 +150,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 3.117\n'
                                '2- 2.143\n'
                                '3- 3.013\n'
-                               '4- 3.500\n')
+                               '4- 3.500\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -162,7 +162,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Boston Celtics\n'
                                '2- Golden State\n'
                                '3- Lakers\n'
-                               '4- Miami Heat\n')
+                               '4- Miami Heat\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -174,7 +174,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Facu Campazzo\n'
                                '2- Manu Ginobili\n'
                                '3- Luis Scola\n'
-                               '4- Leandro Bolmmaro\n')
+                               '4- Leandro Bolmmaro\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -186,7 +186,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 4\n'
                                '2- 8\n'
                                '3- 3\n'
-                               '4- Ninguna de las anteriores\n')
+                               '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -198,7 +198,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 2018/19\n'
                                '2- 2019/20\n'
                                '3- 2015/16\n'
-                               '4- 2020/21\n')
+                               '4- 2020/21\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -210,7 +210,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 10\n'
                                '2- 5\n'
                                '3- 7\n'
-                               '4- 2\n')
+                               '4- 2\n>>>')
             if respuestas == '3':
                 print('Correcto')
                 correctos += 1
@@ -222,7 +222,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Barcelona\n'
                                '2- Roma\n'
                                '3- Boca\n'
-                               '4- Argentinos Juniors\n')
+                               '4- Argentinos Juniors\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -234,7 +234,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 1\n'
                                '2- 4\n'
                                '3- 2\n'
-                               '4- 3\n')
+                               '4- 3\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -246,7 +246,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 18m\n'
                                '2- 20m\n'
                                '3- 12m\n'
-                               '4- 15m\n')
+                               '4- 15m\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -258,7 +258,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 2\n'
                                '2- 5\n'
                                '3- 6\n'
-                               '4- 9\n')
+                               '4- 9\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -270,7 +270,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- España-Holanda\n'
                                '2- Holanda-Portugal\n'
                                '3- España-Brasil\n'
-                               '4- Ninguna de las anteriores\n')
+                               '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -282,7 +282,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Croacia\n'
                                '2- USA\n'
                                '3- Francia\n'
-                               '4- Argentina\n')
+                               '4- Argentina\n>>>')
             if respuestas == '3':
                 print('Correcto')
                 correctos += 1
@@ -294,7 +294,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Marta Fiedina\n'
                                '2- Yukiko Inui\n'
                                '3- Zopie Andrew Spitz\n'
-                               '4- Caeleb Dressel\n')
+                               '4- Caeleb Dressel\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -306,7 +306,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Rafael Nadal\n'
                                '2- Del Potro\n'
                                '3- Novak Djokovic\n'
-                               '4- Roger Federer\n')
+                               '4- Roger Federer\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -318,7 +318,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 9 hs\n'
                                '2- 4 hs\n'
                                '3- 5 hs\n'
-                               '4- 11 hs\n')
+                               '4- 11 hs\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -330,7 +330,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Francia\n'
                                '2- Inglaterra\n'
                                '3- España\n'
-                               '4- Italia\n')
+                               '4- Italia\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -342,7 +342,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 6\n'
                                '2- 7\n'
                                '3- 9\n'
-                               '4- 12\n')
+                               '4- 12\n>>>')
             if respuestas == '2':
                 print('Correcto')
                 correctos += 1
@@ -354,7 +354,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- Lando Norris\n'
                                '2- Max Verstappen\n'
                                '3- Lewis Hamilton\n'
-                               '4- Sebastian Vettel\n')
+                               '4- Sebastian Vettel\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -368,7 +368,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 32\n'
                                '2- 31\n'
                                '3- 50\n'
-                               '4- Ninguna de las anteriores\n')
+                               '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -380,7 +380,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- El intestino grueso\n'
                                '2- El intestino delgado\n'
                                '3- La piel\n'
-                               '4- El riñon\n')
+                               '4- El riñon\n>>>')
             if respuestas == '3':
                 print('Correcto')
                 correctos += 1
@@ -392,7 +392,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- El pancreas\n'
                                '2- El corazon\n'
                                '3- El riñon\n'
-                               '4- El oido\n')
+                               '4- El oido\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -404,7 +404,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- H2O\n'
                                '2- O2\n'
                                '3- H2O2\n'
-                               '4- Ninguna de las anteriores\n')
+                               '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
                 print('Correcto')
                 correctos += 1
@@ -416,7 +416,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- 234142\n'
                                '2- 143123\n'
                                '3- 131516\n'
-                               '4- Ninguna de las anteriores\n')
+                               '4- Ninguna de las anteriores\n>>>')
             if respuestas == '4':
                 print('Correcto')
                 correctos += 1
@@ -428,7 +428,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- La Dinamita\n'
                                '2- El Mercurio\n'
                                '3- La Gravedad\n'
-                               '4- El Oro\n')
+                               '4- El Oro\n>>>')
             if respuestas == '1':
                 print('Correcta')
                 correctos += 1
@@ -440,7 +440,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('1- La Dinamita\n'
                                '2- El Mercurio\n'
                                '3- La Gravedad\n'
-                               '4- El Oro\n')
+                               '4- El Oro\n>>>')
             if respuestas == '3':
                 print('Correcto')
                 correctos += 1
