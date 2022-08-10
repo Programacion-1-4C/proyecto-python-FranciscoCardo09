@@ -277,6 +277,8 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+    return correctos, incorrectos
 
 def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 2:
@@ -520,6 +522,8 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+    return correctos, incorrectos
 
 def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 1:
@@ -601,3 +605,5 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+    return correctos,incorrectos
