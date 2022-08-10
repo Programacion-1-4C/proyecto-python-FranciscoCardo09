@@ -9,7 +9,7 @@ if __name__ == "__main__":
     correctos = 0
     desicion = menu_1(OPCIONES)
     if desicion == '1':
-        while 20 < correctos:
+        while 20 > correctos:
             numero_random_1 = random.randint(1, 6)
             numero_random_2 = random.randint(1, 20)
             if numero_random_1 == 1:
