@@ -33,7 +33,7 @@ Preguntas_Ciencia = {1:'Cuanto es: 2 + 3x10 + 0',
                      13:'Cual es la formula de Fuerza',
                      14:'Como se llama la primera ley de Newton',
                      15:'Como es la formula de la velocidad',
-                     16:'Como se llama la primera ley de Newton',
+                     16:'Como se llama la tercera ley de Newton',
                      17:'Que necesitan las plantas para hacer la fotosintesis',
                      18:'Cuanto es: 100+10',
                      19:'Que descubrio Tesla',
@@ -361,6 +361,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+
 def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 2:
         if numero_random_2 == 1:
@@ -447,4 +448,161 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
+        elif numero_random_2 == 8:
+            print(Preguntas_Ciencia[8])
+            respuestas = input('1- H2O\n'
+                               '2- El N2SO4\n'
+                               '3- SO3\n'
+                               '4- N2\n>>>')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 9:
+            print(Preguntas_Ciencia[9])
+            respuestas = input('1- Hidrogeno\n'
+                               '2- Oxigeno\n'
+                               '3- Yodo\n'
+                               '4- Hierro\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 10:
+            print(Preguntas_Ciencia[10])
+            respuestas = input('1- N2S\n'
+                               '2- CH4\n'
+                               '3- NH3\n'
+                               '4- CO2\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 11:
+            print(Preguntas_Ciencia[11])
+            respuestas = input('1- 384,400 km\n'
+                               '2- 320,000 km\n'
+                               '3- 385,000 km\n'
+                               '4- 384,960 km\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 12:
+            print(Preguntas_Ciencia[12])
+            respuestas = input('1- 38,400 km\n'
+                               '2- 20,000 km\n'
+                               '3- 10,742 km\n'
+                               '4- 12,742 km\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 13:
+            print(Preguntas_Ciencia[13])
+            respuestas = input('1- masa x aceleracion\n'
+                               '2- velocidad / tiempo\n'
+                               '3- masa / tiempo\n'
+                               '4- distancia x tiempo\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 14:
+            print(Preguntas_Ciencia[14])
+            respuestas = input('1- No hay una ley\n'
+                               '2- Ley de accion reaccion\n'
+                               '3- Ley de Inercia\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 15:
+            print(Preguntas_Ciencia[15])
+            respuestas = input('1- distancia / aceleracion\n'
+                               '2- potencia^2\n'
+                               '3- masa x aceleracion\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 16:
+            print(Preguntas_Ciencia[16])
+            respuestas = input('1- No hay una ley\n'
+                               '2- Ley de accion reaccion\n'
+                               '3- Ley de Inercia\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 17:
+            print(Preguntas_Ciencia[17])
+            respuestas = input('1- Sol, CO2, Clorofila, Agua y Sales minerales\n'
+                               '2- Sol, CO2, Clorofila\n'
+                               '3- Agua\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 18:
+            print(Preguntas_Ciencia[18])
+            respuestas = input('1- 110\n'
+                               '2- 120\n'
+                               '3- 145\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 19:
+            print(Preguntas_Ciencia[19])
+            respuestas = input('1- Bobina de Tesla\n'
+                               '2- Motor eléctrico\n'
+                               '3- La corriente alterna\n'
+                               '4- Todas son correctas\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 20:
+            print(Preguntas_Ciencia[20])
+            respuestas = input('1- Teoría de la relatividad especial\n'
+                               '2- Teoría de campo unificado\n'
+                               '3- E=mc2\n'
+                               '4- Todas son correctas\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
 
+def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):

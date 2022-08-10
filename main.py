@@ -18,3 +18,11 @@ if __name__ == "__main__":
             elif numero_random_1 == 2:
                 preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
                 pass
+            elif numero_random_1 == 3:
+                pass
+            elif numero_random_1 == 4:
+                pass
+            elif numero_random_1 == 5:
+                pass
+            elif numero_random_1 == 6:
+                pass
