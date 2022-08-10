@@ -2,7 +2,7 @@ Preguntas_Deporte = {1:'Cuantos campeonatos ganados tiene Michael Jordan',
                      2:'En cuales equipos estuvo Lebron James',
                      3:'Cuantos triples metio Curry',
                      4:'Que equipo gano la ultima NBA',
-                     5:'Cual de los sihuientes jugadores Agentinos estara en el salon de la fama',
+                     5:'Cual de los siguientes jugadores Agentinos estara en el salon de la fama',
                      6:'Cuantos Mundiales tiene Alemania',
                      7:'A partir de qué temporada se implantó el VAR en LaLiga',
                      8:'Cuantos balones de oro tiene Messi',
@@ -119,7 +119,7 @@ Preguntas_Arte = {   1:'Cuál es la obra artística mexica más grande',
                      19:'Que tipos de colores existen',
                      20:'Quien pinto la ultima cena'}
 
-def preguntas (numero_random_1,numero_random_2,correctos,incorrectos):
+def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 1:
         if numero_random_2 == 1:
             print(Preguntas_Deporte[1])
@@ -164,6 +164,284 @@ def preguntas (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Lakers\n'
                                '4- Miami Heat\n')
             if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 5:
+            print(Preguntas_Deporte[5])
+            respuestas = input('1- Facu Campazzo\n'
+                               '2- Manu Ginobili\n'
+                               '3- Luis Scola\n'
+                               '4- Leandro Bolmmaro\n')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 6:
+            print(Preguntas_Deporte[6])
+            respuestas = input('1- 4\n'
+                               '2- 8\n'
+                               '3- 3\n'
+                               '4- Ninguna de las anteriores\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 7:
+            print(Preguntas_Deporte[7])
+            respuestas = input('1- 2018/19\n'
+                               '2- 2019/20\n'
+                               '3- 2015/16\n'
+                               '4- 2020/21\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 8:
+            print(Preguntas_Deporte[8])
+            respuestas = input('1- 10\n'
+                               '2- 5\n'
+                               '3- 7\n'
+                               '4- 2\n')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 9:
+            print(Preguntas_Deporte[9])
+            respuestas = input('1- Barcelona\n'
+                               '2- Roma\n'
+                               '3- Boca\n'
+                               '4- Argentinos Juniors\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 10:
+            print(Preguntas_Deporte[10])
+            respuestas = input('1- 1\n'
+                               '2- 4\n'
+                               '3- 2\n'
+                               '4- 3\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 11:
+            print(Preguntas_Deporte[11])
+            respuestas = input('1- 18m\n'
+                               '2- 20m\n'
+                               '3- 12m\n'
+                               '4- 15m\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 12:
+            print(Preguntas_Deporte[12])
+            respuestas = input('1- 2\n'
+                               '2- 5\n'
+                               '3- 6\n'
+                               '4- 9\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 13:
+            print(Preguntas_Deporte[13])
+            respuestas = input('1- España-Holanda\n'
+                               '2- Holanda-Portugal\n'
+                               '3- España-Brasil\n'
+                               '4- Ninguna de las anteriores\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 14:
+            print(Preguntas_Deporte[14])
+            respuestas = input('1- Croacia\n'
+                               '2- USA\n'
+                               '3- Francia\n'
+                               '4- Argentina\n')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 15:
+            print(Preguntas_Deporte[15])
+            respuestas = input('1- Marta Fiedina\n'
+                               '2- Yukiko Inui\n'
+                               '3- Zopie Andrew Spitz\n'
+                               '4- Caeleb Dressel\n')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 16:
+            print(Preguntas_Deporte[16])
+            respuestas = input('1- Rafael Nadal\n'
+                               '2- Del Potro\n'
+                               '3- Novak Djokovic\n'
+                               '4- Roger Federer\n')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 17:
+            print(Preguntas_Deporte[17])
+            respuestas = input('1- 9 hs\n'
+                               '2- 4 hs\n'
+                               '3- 5 hs\n'
+                               '4- 11 hs\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 18:
+            print(Preguntas_Deporte[18])
+            respuestas = input('1- Francia\n'
+                               '2- Inglaterra\n'
+                               '3- España\n'
+                               '4- Italia\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 19:
+            print(Preguntas_Deporte[19])
+            respuestas = input('1- 6\n'
+                               '2- 7\n'
+                               '3- 9\n'
+                               '4- 12\n')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 20:
+            print(Preguntas_Deporte[20])
+            respuestas = input('1- Lando Norris\n'
+                               '2- Max Verstappen\n'
+                               '3- Lewis Hamilton\n'
+                               '4- Sebastian Vettel\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
+    if numero_random_1 == 2:
+        if numero_random_2 == 1:
+            print(Preguntas_Ciencia[1])
+            respuestas = input('1- 32\n'
+                               '2- 31\n'
+                               '3- 50\n'
+                               '4- Ninguna de las anteriores\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 2:
+            print(Preguntas_Ciencia[2])
+            respuestas = input('1- El intestino grueso\n'
+                               '2- El intestino delgado\n'
+                               '3- La piel\n'
+                               '4- El riñon\n')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 3:
+            print(Preguntas_Ciencia[3])
+            respuestas = input('1- El pancreas\n'
+                               '2- El corazon\n'
+                               '3- El riñon\n'
+                               '4- El oido\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 4:
+            print(Preguntas_Ciencia[4])
+            respuestas = input('1- H2O\n'
+                               '2- O2\n'
+                               '3- H2O2\n'
+                               '4- Ninguna de las anteriores\n')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 5:
+            print(Preguntas_Ciencia[5])
+            respuestas = input('1- 234142\n'
+                               '2- 143123\n'
+                               '3- 131516\n'
+                               '4- Ninguna de las anteriores\n')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 6:
+            print(Preguntas_Ciencia[6])
+            respuestas = input('1- La Dinamita\n'
+                               '2- El Mercurio\n'
+                               '3- La Gravedad\n'
+                               '4- El Oro\n')
+            if respuestas == '1':
+                print('Correcta')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 7:
+            print(Preguntas_Ciencia[7])
+            respuestas = input('1- La Dinamita\n'
+                               '2- El Mercurio\n'
+                               '3- La Gravedad\n'
+                               '4- El Oro\n')
+            if respuestas == '3':
                 print('Correcto')
                 correctos += 1
             else:
