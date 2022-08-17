@@ -4,7 +4,7 @@ if __name__ == "__main__":
     respuestas = 'Correctos'
     incorrectos = 0
     correctos = 0
-    i = 0
+    i = 1
     contador_correctos_jugador_1 = 0
     contador_correctos_jugador_2 = 0
     contador_correctos_jugador_3 = 0
