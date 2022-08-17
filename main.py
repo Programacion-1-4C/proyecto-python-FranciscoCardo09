@@ -1,5 +1,5 @@
 import random
-from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2,preguntas_ciencia,preguntas_deporte,preguntas_geografia,preguntas_entretenimiento,preguntas_historia
+from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2,preguntas_ciencia,preguntas_arte,preguntas_deporte,preguntas_geografia,preguntas_entretenimiento,preguntas_historia
 
 if __name__ == "__main__":
     incorrectos = 0
@@ -12,17 +12,17 @@ if __name__ == "__main__":
             numero_random_1 = random.randint(1, 6)
             numero_random_2 = random.randint(1, 20)
             if numero_random_1 == 1:
-                correctos,incorrectos = preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos)
+                correctos,incorrectos,respuestas = preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos)
             elif numero_random_1 == 2:
-                correctos,incorrectos = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
+                correctos,incorrectos,respuestas = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 3:
-                correctos,incorrectos = preguntas_geografia(numero_random_1, numero_random_2, correctos, incorrectos)
+                correctos,incorrectos,respuestas = preguntas_geografia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 4:
-                correctos,incorrectos = preguntas_entretenimiento(numero_random_1, numero_random_2, correctos, incorrectos)
+                correctos,incorrectos,respuestas = preguntas_entretenimiento(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 5:
-                correctos, incorrectos = preguntas_historia(numero_random_1, numero_random_2, correctos, incorrectos)
+                correctos,incorrectos,respuestas = preguntas_historia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 6:
-                pass
+                correctos,incorrectos,respuestas = preguntas_arte(numero_random_1, numero_random_2, correctos, incorrectos)
             if incorrectos == 3:
                 print('Perdiste, seguí participando')
                 break
@@ -34,11 +34,11 @@ if __name__ == "__main__":
             if i == 1:
                 print(f'Turno del jugador{i}')
                 if numero_random_1 == 1:
-                    correctos, incorrectos = preguntas_deporte(numero_random_1, numero_random_2, correctos, incorrectos)
+                    correctos,incorrectos,respuestas = preguntas_deporte(numero_random_1, numero_random_2, correctos, incorrectos)
                 elif numero_random_1 == 2:
-                    correctos, incorrectos = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
+                    correctos,incorrectos,respuestas = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
                 elif numero_random_1 == 3:
-                    correctos, incorrectos = preguntas_geografia(numero_random_1, numero_random_2, correctos,incorrectos)
+                    correctos,incorrectos,respuestas = preguntas_geografia(numero_random_1, numero_random_2, correctos,incorrectos)
                 elif numero_random_1 == 4:
                     pass
                 elif numero_random_1 == 5:
