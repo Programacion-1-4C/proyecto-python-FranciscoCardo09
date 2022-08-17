@@ -39,6 +39,7 @@ Info_jugador_4 = {'Deporte':'No ganado',
                   'Correctas':0,
                   'Incorrectas':0}
 lista_categorias_jugador_1 = ['Deporte','Geografia','Arte','Ciencia','Entretenimiento','Historia']
+lista_categorias_jugador_2 = ['Deporte','Geografia','Arte','Ciencia','Entretenimiento','Historia']
 
 lista_paises_europa = ['Albania','Alemania','Andorra','Austria','Bélgica','Bielorrusia','Bosnia y Herzegovina','Bulgaria',
                         'Chipre','Ciudad del Vaticano','Croacia','Dinamarca','Eslovaquia','Eslovenia','España','Estonia',
