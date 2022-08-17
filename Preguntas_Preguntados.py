@@ -66,7 +66,7 @@ Preguntas_Entretenimiento = {1:'Nombra un personaje perteneciente a la familia S
                             6:'En cual de estas peliculas actua Tom Hanks',
                             7:'Completa la canción:\nMamaaa\nJust killed a man\n......\nNow he is dead',
                             8:'Cuantos hijos tenia Pepe de Casados con hijos',
-                            9:'Nombra una pelicula en la qque actue Guillermo Francella',
+                            9:'En que pelicula actua Guillermo Francella',
                             10:'Cuantas peliculas tiene Harry Potter',
                             11:'Cuantas peliculas tiene Star Wars',
                             12:'Como se llama la tercera pelicula de Star Wars',

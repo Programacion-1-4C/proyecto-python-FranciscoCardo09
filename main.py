@@ -1,5 +1,5 @@
 import random
-from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2,preguntas_ciencia,preguntas_deporte,preguntas_geografia
+from Funciones_Preguntados import menu_1, menu_2, OPCIONES,OPCIONES2,preguntas_ciencia,preguntas_deporte,preguntas_geografia,preguntas_entretenimiento,preguntas_historia
 
 if __name__ == "__main__":
     incorrectos = 0
@@ -18,9 +18,9 @@ if __name__ == "__main__":
             elif numero_random_1 == 3:
                 correctos,incorrectos = preguntas_geografia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 4:
-                pass
+                correctos,incorrectos = preguntas_entretenimiento(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 5:
-                pass
+                correctos, incorrectos = preguntas_historia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 6:
                 pass
             if incorrectos == 3:

@@ -63,6 +63,7 @@ lista_paises_africa = ['Angola','Argelia','Benín, Porto','Botsuana','Burkina Fa
                        'República Democrática del congo','Santo Tomé y Príncipe','Senegal','Seychelles','Sierra Leona','Somalia',
                        'Sudáfrica','Sudán','Sudán del Sur','Suazilandia','Tanzania','Túnez','Togo','Uganda','Yibuti','Zambia',
                        'Zimbabue']
+lista_familia_simpsons = ['Homero','Maggie','Lisa','Bart','Marge','Abraham','Mona']
 
 def menu_1 (OPCIONES):
     for num, opciones in enumerate(OPCIONES):
@@ -85,9 +86,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 6\n'
                                '4- 9\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 2:
@@ -97,9 +100,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Miami Heat\n'
                                '4- Todas son correctas\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 3:
@@ -109,9 +114,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 3.013\n'
                                '4- 3.500\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 4:
@@ -121,9 +128,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Lakers\n'
                                '4- Miami Heat\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 5:
@@ -133,9 +142,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Luis Scola\n'
                                '4- Leandro Bolmmaro\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 6:
@@ -145,9 +156,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 3\n'
                                '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 7:
@@ -157,9 +170,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 2015/16\n'
                                '4- 2020/21\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 8:
@@ -169,9 +184,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 7\n'
                                '4- 2\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 9:
@@ -181,9 +198,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Boca\n'
                                '4- Argentinos Juniors\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 10:
@@ -193,9 +212,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 2\n'
                                '4- 3\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 11:
@@ -205,9 +226,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 12m\n'
                                '4- 15m\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 12:
@@ -217,9 +240,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 6\n'
                                '4- 9\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 13:
@@ -229,9 +254,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- España-Brasil\n'
                                '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 14:
@@ -241,9 +268,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Francia\n'
                                '4- Argentina\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 15:
@@ -253,9 +282,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Zopie Andrew Spitz\n'
                                '4- Caeleb Dressel\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 16:
@@ -265,9 +296,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Novak Djokovic\n'
                                '4- Roger Federer\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 17:
@@ -277,9 +310,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 5 hs\n'
                                '4- 11 hs\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 18:
@@ -289,9 +324,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- España\n'
                                '4- Italia\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 19:
@@ -301,9 +338,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 9\n'
                                '4- 12\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 20:
@@ -313,13 +352,15 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Lewis Hamilton\n'
                                '4- Sebastian Vettel\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
     print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
-    return correctos, incorrectos
+    return correctos, incorrectos,respuestas
 
 def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 2:
@@ -330,9 +371,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 50\n'
                                '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 2:
@@ -342,9 +385,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- La piel\n'
                                '4- El riñon\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 3:
@@ -354,9 +399,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- El riñon\n'
                                '4- El oido\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 4:
@@ -366,9 +413,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- H2O2\n'
                                '4- Ninguna de las anteriores\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 5:
@@ -378,9 +427,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 131516\n'
                                '4- Ninguna de las anteriores\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 6:
@@ -390,9 +441,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- La Gravedad\n'
                                '4- El Oro\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcta')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 7:
@@ -402,9 +455,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- La Gravedad\n'
                                '4- El Oro\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 8:
@@ -414,9 +469,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- SO3\n'
                                '4- N2\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 9:
@@ -426,9 +483,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Yodo\n'
                                '4- Hierro\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 10:
@@ -438,9 +497,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- NH3\n'
                                '4- CO2\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 11:
@@ -450,9 +511,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 385,000 km\n'
                                '4- 384,960 km\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 12:
@@ -462,9 +525,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 10,742 km\n'
                                '4- 12,742 km\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 13:
@@ -474,9 +539,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- masa / tiempo\n'
                                '4- distancia x tiempo\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 14:
@@ -486,9 +553,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Ley de Inercia\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 15:
@@ -498,9 +567,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- masa x aceleracion\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 16:
@@ -510,9 +581,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Ley de Inercia\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 17:
@@ -522,9 +595,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Agua\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 18:
@@ -534,9 +609,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 145\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 19:
@@ -546,9 +623,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- La corriente alterna\n'
                                '4- Todas son correctas\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 20:
@@ -558,13 +637,15 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- E=mc2\n'
                                '4- Todas son correctas\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
     print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
-    return correctos, incorrectos
+    return correctos, incorrectos,respuestas
 
 def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 3:
@@ -575,9 +656,11 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 132\n'
                                '4- 235\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 2:
@@ -587,9 +670,11 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 23\n'
                                '4- 19\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         elif numero_random_2 == 3:
@@ -599,9 +684,11 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Rio Nilo\n'
                                '4- Rio Amazonas\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 4:
@@ -611,9 +698,11 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Noruega\n'
                                '4- Polonia\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 5:
@@ -623,27 +712,33 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- 6\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
                 print('Incorrecto')
+                respuestas = 'Incorrecto'
                 incorrectos += 1
         if numero_random_2 == 6:
             print(Preguntas_Geografia[6])
             respuestas = input('>>>')
             if respuestas in lista_paises_europa:
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 7:
             print(Preguntas_Geografia[7])
             respuestas = input('>>>')
             if respuestas in lista_paises_america:
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 8:
@@ -651,8 +746,10 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('>>>')
             if respuestas in lista_paises_oceania:
                 print('Correcto')
+                respuestas = 'Correcto'
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 9:
@@ -660,8 +757,10 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('>>>')
             if respuestas in lista_paises_europa:
                 print('Correcto')
+                respuestas = 'Correcto'
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 10:
@@ -669,8 +768,10 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
             respuestas = input('>>>')
             if respuestas in lista_paises_africa:
                 print('Correcto')
+                respuestas = 'Correcto'
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
         if numero_random_2 == 11:
@@ -680,10 +781,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Indico\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 12:
             print(Preguntas_Geografia[12])
             respuestas = input('1- Londres\n'
@@ -691,10 +795,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Buenos Aires\n'
                                '4- Moscú\n>>>')
             if respuestas == '2':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 13:
             print(Preguntas_Geografia[13])
             respuestas = input('1- New York\n'
@@ -702,10 +809,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- California\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 14:
             print(Preguntas_Geografia[14])
             respuestas = input('1- Rio Cuarto\n'
@@ -713,10 +823,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Roma\n'
                                '4- Ninguna es correcta\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 15:
             print(Preguntas_Geografia[15])
             respuestas = input('1- Asia Y Oceania\n'
@@ -724,10 +837,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Asia Y Europa\n'
                                '4- Africa\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 16:
             print(Preguntas_Geografia[16])
             respuestas = input('1- America\n'
@@ -735,10 +851,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Africa\n'
                                '4- Asia\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 17:
             print(Preguntas_Geografia[17])
             respuestas = input('1- Brasil\n'
@@ -746,9 +865,12 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Mexico\n'
                                '4- Chile\n>>>')
             if respuestas == '1':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
+                incorrectos += 1
                 print('Incorrecto')
         if numero_random_2 == 18:
             print(Preguntas_Geografia[18])
@@ -757,10 +879,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Canadá\n'
                                '4- Estados Unidos\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 19:
             print(Preguntas_Geografia[19])
             respuestas = input('1- Peru\n'
@@ -768,10 +893,13 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Canadá\n'
                                '4- Estados Unidos\n>>>')
             if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
+                respuestas = 'Incorrecto'
                 print('Incorrecto')
+                incorrectos += 1
         if numero_random_2 == 20:
             print(Preguntas_Geografia[20])
             respuestas = input('1- Andorra\n'
@@ -779,14 +907,576 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '3- Ciudad del Vaticano\n'
                                '4- Chipre\n>>>')
             if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                incorrectos += 1
+                print('Incorrecto')
+    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
+    return correctos,incorrectos,respuestas
+
+def preguntas_entretenimiento(numero_random_1,numero_random_2,correctos,incorrectos):
+    if numero_random_1 == 4:
+        if numero_random_2 == 1:
+            print(Preguntas_Entretenimiento[1])
+            respuestas = input('>>>')
+            if respuestas in lista_familia_simpsons:
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 2:
+            print(Preguntas_Entretenimiento[2])
+            respuestas = input('1- Guiding Light\n'
+                               '2- Doctor Who\n'
+                               '3- One Piece\n'
+                               '4- Friends\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 3:
+            print(Preguntas_Entretenimiento[3])
+            respuestas = input('1- Atlanta\n'
+                               '2- Titanic\n'
+                               '3- Evolution of a Filipino Family\n'
+                               '4- Out 1\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 4:
+            print(Preguntas_Entretenimiento[4])
+            respuestas = input('1- Volver al Futuro\n'
+                               '2- Star Wars III\n'
+                               '3- Titanic\n'
+                               '4- El Señor de los Anillos: el retorno del Rey\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 5:
+            print(Preguntas_Entretenimiento[5])
+            respuestas = input('1- Taxi Driver\n'
+                               '2- Forrest Gump\n'
+                               '3- El Irlandes\n'
+                               '4- Casino\n>>>')
+            if respuestas == '2':
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 6:
+            print(Preguntas_Entretenimiento[6])
+            respuestas = input('1- Naufrago\n'
+                               '2- Forrest Gump\n'
+                               '3- Elvis Presley\n'
+                               '4- Todas son correctas\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 7:
+            print(Preguntas_Entretenimiento[7])
+            respuestas = input('1- my time has come\n'
+                               '2- life had just begun\n'
+                               '3- pulled my trigger\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 8:
+            print(Preguntas_Entretenimiento[8])
+            respuestas = input('1- 1\n'
+                               '2- 2\n'
+                               '3- 3\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 9:
+            print(Preguntas_Entretenimiento[9])
+            respuestas = input('1- Granizo\n'
+                               '2- Mi obra maestra\n'
+                               '3- El robo del siglo\n'
+                               '4- Todas correcta\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
             else:
                 print('Incorrecto')
+                respuestas = 'Incorrecto'
+                incorrectos += 1
+        if numero_random_2 == 10:
+            print(Preguntas_Entretenimiento[10])
+            respuestas = input('1- 8\n'
+                               '2- 7\n'
+                               '3- 9\n'
+                               '4- 10\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 11:
+            print(Preguntas_Entretenimiento[11])
+            respuestas = input('1- 9\n'
+                               '2- 11\n'
+                               '3- 10\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                respuestas = 'Incorrecto'
+                incorrectos += 1
+        if numero_random_2 == 12:
+            print(Preguntas_Entretenimiento[12])
+            respuestas = input('1- La Venganza de los Sith\n'
+                               '2- El retorno del Jedi\n'
+                               '3- Una nueva esperanza\n'
+                               '4- El ultimo Jedi\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 13:
+            print(Preguntas_Entretenimiento[13])
+            respuestas = input('1- 2014\n'
+                               '2- 2016\n'
+                               '3- 2012\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 14:
+            print(Preguntas_Entretenimiento[14])
+            respuestas = input('1- Tom Hardy\n'
+                               '2- Paul Anderson\n'
+                               '3- Cillian Murphy\n'
+                               '4- Finn Cole\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 15:
+            print(Preguntas_Entretenimiento[15])
+            respuestas = input('1- Arnold Schwarzenegger\n'
+                               '2- Chris Pratt\n'
+                               '3- Chris Evans\n'
+                               '4- Chris Hemswort\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 16:
+            print(Preguntas_Entretenimiento[16])
+            respuestas = input('1- Cristopher Nolan\n'
+                               '2- Vince Gilligan\n'
+                               '3- Martin Scorsese\n'
+                               '4- Quentin Tarantino\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 17:
+            print(Preguntas_Entretenimiento[17])
+            respuestas = input('1- 2\n'
+                               '2- 4\n'
+                               '3- 6\n'
+                               '4- 8\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 18:
+            print(Preguntas_Entretenimiento[18])
+            respuestas = input('1- 1999\n'
+                               '2- 1977\n'
+                               '3- 1985\n'
+                               '4- 1995\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 19:
+            print(Preguntas_Entretenimiento[19])
+            respuestas = input('1- I never wanna hear you say\n'
+                               '2- Tell me why\n'
+                               '3- Aint nothin but a mistake\n'
+                               '4- Am I your fire?\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 20:
+            print(Preguntas_Entretenimiento[20])
+            respuestas = input('1- Tom Hanks\n'
+                               '2- Robert Dawney Jr.\n'
+                               '3- Robert De Niro\n'
+                               '4- Harrison Ford\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                incorrectos += 1
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
     print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
-    return correctos,incorrectos
+    return correctos, incorrectos, respuestas
 
 def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
     if numero_random_1 == 4:
         if numero_random_2 == 1:
-            pass
+            print(Preguntas_Entretenimiento[1])
+            respuestas = input('>>>')
+            if respuestas in lista_familia_simpsons:
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 2:
+            print(Preguntas_Entretenimiento[2])
+            respuestas = input('1- Guiding Light\n'
+                               '2- Doctor Who\n'
+                               '3- One Piece\n'
+                               '4- Friends\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        elif numero_random_2 == 3:
+            print(Preguntas_Entretenimiento[3])
+            respuestas = input('1- Atlanta\n'
+                               '2- Titanic\n'
+                               '3- Evolution of a Filipino Family\n'
+                               '4- Out 1\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 4:
+            print(Preguntas_Entretenimiento[4])
+            respuestas = input('1- Volver al Futuro\n'
+                               '2- Star Wars III\n'
+                               '3- Titanic\n'
+                               '4- El Señor de los Anillos: el retorno del Rey\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 5:
+            print(Preguntas_Entretenimiento[5])
+            respuestas = input('1- Taxi Driver\n'
+                               '2- Forrest Gump\n'
+                               '3- El Irlandes\n'
+                               '4- Casino\n>>>')
+            if respuestas == '2':
+                print('Correcto')
+                respuestas = 'Correcto'
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 6:
+            print(Preguntas_Entretenimiento[6])
+            respuestas = input('1- Naufrago\n'
+                               '2- Forrest Gump\n'
+                               '3- Elvis Presley\n'
+                               '4- Todas son correctas\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 7:
+            print(Preguntas_Entretenimiento[7])
+            respuestas = input('1- my time has come\n'
+                               '2- life had just begun\n'
+                               '3- pulled my trigger\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 8:
+            print(Preguntas_Entretenimiento[8])
+            respuestas = input('1- 1\n'
+                               '2- 2\n'
+                               '3- 3\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 9:
+            print(Preguntas_Entretenimiento[9])
+            respuestas = input('1- Granizo\n'
+                               '2- Mi obra maestra\n'
+                               '3- El robo del siglo\n'
+                               '4- Todas correcta\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                respuestas = 'Incorrecto'
+                incorrectos += 1
+        if numero_random_2 == 10:
+            print(Preguntas_Entretenimiento[10])
+            respuestas = input('1- 8\n'
+                               '2- 7\n'
+                               '3- 9\n'
+                               '4- 10\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 11:
+            print(Preguntas_Entretenimiento[11])
+            respuestas = input('1- 9\n'
+                               '2- 11\n'
+                               '3- 10\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                respuestas = 'Incorrecto'
+                incorrectos += 1
+        if numero_random_2 == 12:
+            print(Preguntas_Entretenimiento[12])
+            respuestas = input('1- La Venganza de los Sith\n'
+                               '2- El retorno del Jedi\n'
+                               '3- Una nueva esperanza\n'
+                               '4- El ultimo Jedi\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 13:
+            print(Preguntas_Entretenimiento[13])
+            respuestas = input('1- 2014\n'
+                               '2- 2016\n'
+                               '3- 2012\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 14:
+            print(Preguntas_Entretenimiento[14])
+            respuestas = input('1- Tom Hardy\n'
+                               '2- Paul Anderson\n'
+                               '3- Cillian Murphy\n'
+                               '4- Finn Cole\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 15:
+            print(Preguntas_Entretenimiento[15])
+            respuestas = input('1- Arnold Schwarzenegger\n'
+                               '2- Chris Pratt\n'
+                               '3- Chris Evans\n'
+                               '4- Chris Hemswort\n>>>')
+            if respuestas == '4':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 16:
+            print(Preguntas_Entretenimiento[16])
+            respuestas = input('1- Cristopher Nolan\n'
+                               '2- Vince Gilligan\n'
+                               '3- Martin Scorsese\n'
+                               '4- Quentin Tarantino\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 17:
+            print(Preguntas_Entretenimiento[17])
+            respuestas = input('1- 2\n'
+                               '2- 4\n'
+                               '3- 6\n'
+                               '4- 8\n>>>')
+            if respuestas == '3':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 18:
+            print(Preguntas_Entretenimiento[18])
+            respuestas = input('1- 1999\n'
+                               '2- 1977\n'
+                               '3- 1985\n'
+                               '4- 1995\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 19:
+            print(Preguntas_Entretenimiento[19])
+            respuestas = input('1- I never wanna hear you say\n'
+                               '2- Tell me why\n'
+                               '3- Aint nothin but a mistake\n'
+                               '4- Am I your fire?\n>>>')
+            if respuestas == '2':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 20:
+            print(Preguntas_Entretenimiento[20])
+            respuestas = input('1- Tom Hanks\n'
+                               '2- Robert Dawney Jr.\n'
+                               '3- Robert De Niro\n'
+                               '4- Harrison Ford\n>>>')
+            if respuestas == '1':
+                respuestas = 'Correcto'
+                print('Correcto')
+                correctos += 1
+            else:
+                incorrectos += 1
+                respuestas = 'Incorrecto'
+                print('Incorrecto')
+    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
+    return correctos, incorrectos, respuestas
