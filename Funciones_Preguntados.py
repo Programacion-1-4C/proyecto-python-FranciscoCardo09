@@ -6,6 +6,39 @@ OPCIONES = ['Modo Normal',
 OPCIONES2 = ['Videojuegos',
              'Marvel',
              'Series']
+Info_jugador_1 = {'Deporte':'No ganado',
+                  'Ciencia':'No ganado',
+                  'Geografia':'No ganado',
+                  'Entretenimiento':'No ganado',
+                  'Historia':'No ganado',
+                  'Arte':'No ganado',
+                  'Correctas':0,
+                  'Incorrectas':0}
+Info_jugador_2 = {'Deporte':'No ganado',
+                  'Ciencia':'No ganado',
+                  'Geografia':'No ganado',
+                  'Entretenimiento':'No ganado',
+                  'Historia':'No ganado',
+                  'Arte':'No ganado',
+                  'Correctas':0,
+                  'Incorrectas':0}
+Info_jugador_3 = {'Deporte':'No ganado',
+                  'Ciencia':'No ganado',
+                  'Geografia':'No ganado',
+                  'Entretenimiento':'No ganado',
+                  'Historia':'No ganado',
+                  'Arte':'No ganado',
+                  'Correctas':0,
+                  'Incorrectas':0}
+Info_jugador_4 = {'Deporte':'No ganado',
+                  'Ciencia':'No ganado',
+                  'Geografia':'No ganado',
+                  'Entretenimiento':'No ganado',
+                  'Historia':'No ganado',
+                  'Arte':'No ganado',
+                  'Correctas':0,
+                  'Incorrectas':0}
+
 lista_paises_europa = ['Albania','Alemania','Andorra','Austria','Bélgica','Bielorrusia','Bosnia y Herzegovina','Bulgaria',
                         'Chipre','Ciudad del Vaticano','Croacia','Dinamarca','Eslovaquia','Eslovenia','España','Estonia',
                         'Finlandia','Francia','Grecia','Hungría','Irlanda','Islandia','Italia','Letonia','Liechtenstein','Lituania',
@@ -752,3 +785,8 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                 print('Incorrecto')
     print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos,incorrectos
+
+def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
+    if numero_random_1 == 4:
+        if numero_random_2 == 1:
+            pass

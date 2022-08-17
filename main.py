@@ -13,10 +13,8 @@ if __name__ == "__main__":
             numero_random_2 = random.randint(1, 20)
             if numero_random_1 == 1:
                 correctos,incorrectos = preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos)
-                pass
             elif numero_random_1 == 2:
                 correctos,incorrectos = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
-                pass
             elif numero_random_1 == 3:
                 correctos,incorrectos = preguntas_geografia(numero_random_1, numero_random_2, correctos, incorrectos)
             elif numero_random_1 == 4:
@@ -31,4 +29,19 @@ if __name__ == "__main__":
     if desicion == '2':
         cant_de_jugadores = int(input('Cuantos jugadores van a jugar?(Maximo 4 jugadores)\n>>>'))
         for i in range(cant_de_jugadores):
-            pass
+            numero_random_1 = random.randint(1, 6)
+            numero_random_2 = random.randint(1, 20)
+            if i == 1:
+                print(f'Turno del jugador{i}')
+                if numero_random_1 == 1:
+                    correctos, incorrectos = preguntas_deporte(numero_random_1, numero_random_2, correctos, incorrectos)
+                elif numero_random_1 == 2:
+                    correctos, incorrectos = preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos)
+                elif numero_random_1 == 3:
+                    correctos, incorrectos = preguntas_geografia(numero_random_1, numero_random_2, correctos,incorrectos)
+                elif numero_random_1 == 4:
+                    pass
+                elif numero_random_1 == 5:
+                    pass
+                elif numero_random_1 == 6:
+                    pass
