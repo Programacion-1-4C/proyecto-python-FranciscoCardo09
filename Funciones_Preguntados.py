@@ -21,7 +21,15 @@ lista_paises_america = ['Antigua y Barbuda','Aruba','Bahamas','Barbados','Cuba',
                         'San Bartolomé','San Cristóbal y Nieves','San Vicente y las Granadinas','Santa Lucía','Trinidad y Tobago',
                         'Belice','Costa Rica','El Salvador','Guatemala','Honduras','Nicaragua','Panamá','Argentina','Bolivia','Brasil','Chile',
                         'Colombia','Ecuador','Guyana','Guyana Francesa','Paraguay','Perú','Suriname','Uruguay','Venezuela','México']
-lista_paises_oceania = []
+lista_paises_oceania = ['Australia','Nueva Zelanda','Papúa Nueva Guinea','Fiyi','Islas Marshall','Islas Salomón','Kiribati',
+                        'Tonga','Samoa','Tuvalu','Vanuatu','Micronesia','Nauru','Palaos']
+lista_paises_africa = ['Angola','Argelia','Benín, Porto','Botsuana','Burkina Faso','Burundi','Cabo Verde','Camerún',
+                       'Centroafricana','Comores','Costa de Marfil','Chad','Egipto','Eritrea','Etiopía','Gabón','Gambia','Ghana',
+                       'Guinea','Guinea-Bissau','Guinea Ecuatorial','Kenia','Lesoto','Liberia','Libia','Madagascar','Malaui','Malí',
+                       'Marruecos','Mauricio','Mauritania','Mozambique','Namibia','Níger','Nigeria','Ruanda','República del Congo',
+                       'República Democrática del congo','Santo Tomé y Príncipe','Senegal','Seychelles','Sierra Leona','Somalia',
+                       'Sudáfrica','Sudán','Sudán del Sur','Suazilandia','Tanzania','Túnez','Togo','Uganda','Yibuti','Zambia',
+                       'Zimbabue']
 
 def menu_1 (OPCIONES):
     for num, opciones in enumerate(OPCIONES):
@@ -277,7 +285,7 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
-    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos
 
 def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
@@ -522,11 +530,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
-    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos
 
 def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 1:
+    if numero_random_1 == 3:
         if numero_random_2 == 1:
             print(Preguntas_Geografia[1])
             respuestas = input('1- 195\n'
@@ -605,5 +613,142 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
             else:
                 print('Incorrecto')
                 incorrectos += 1
-    print(f'Respuestas correctas: {correctos}. Respuestas incorrectas: {incorrectos}')
+        if numero_random_2 == 8:
+            print(Preguntas_Geografia[8])
+            respuestas = input('>>>')
+            if respuestas in lista_paises_oceania:
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 9:
+            print(Preguntas_Geografia[9])
+            respuestas = input('>>>')
+            if respuestas in lista_paises_europa:
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 10:
+            print(Preguntas_Geografia[10])
+            respuestas = input('>>>')
+            if respuestas in lista_paises_africa:
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+                incorrectos += 1
+        if numero_random_2 == 11:
+            print(Preguntas_Geografia[11])
+            respuestas = input('1- Atlantico\n'
+                               '2- Pacifico\n'
+                               '3- Indico\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 12:
+            print(Preguntas_Geografia[12])
+            respuestas = input('1- Londres\n'
+                               '2- Paris\n'
+                               '3- Buenos Aires\n'
+                               '4- Moscú\n>>>')
+            if respuestas == '2':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 13:
+            print(Preguntas_Geografia[13])
+            respuestas = input('1- New York\n'
+                               '2- Washington DC\n'
+                               '3- California\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 14:
+            print(Preguntas_Geografia[14])
+            respuestas = input('1- Rio Cuarto\n'
+                               '2- Venecia\n'
+                               '3- Roma\n'
+                               '4- Ninguna es correcta\n>>>')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 15:
+            print(Preguntas_Geografia[15])
+            respuestas = input('1- Asia Y Oceania\n'
+                               '2- Europa\n'
+                               '3- Asia Y Europa\n'
+                               '4- Africa\n>>>')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 16:
+            print(Preguntas_Geografia[16])
+            respuestas = input('1- America\n'
+                               '2- Oceania\n'
+                               '3- Africa\n'
+                               '4- Asia\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 17:
+            print(Preguntas_Geografia[17])
+            respuestas = input('1- Brasil\n'
+                               '2- Egipto\n'
+                               '3- Mexico\n'
+                               '4- Chile\n>>>')
+            if respuestas == '1':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 18:
+            print(Preguntas_Geografia[18])
+            respuestas = input('1- Peru\n'
+                               '2- Mexico\n'
+                               '3- Canadá\n'
+                               '4- Estados Unidos\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 19:
+            print(Preguntas_Geografia[19])
+            respuestas = input('1- Peru\n'
+                               '2- Mexico\n'
+                               '3- Canadá\n'
+                               '4- Estados Unidos\n>>>')
+            if respuestas == '4':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+        if numero_random_2 == 20:
+            print(Preguntas_Geografia[20])
+            respuestas = input('1- Andorra\n'
+                               '2- Luxemburgo\n'
+                               '3- Ciudad del Vaticano\n'
+                               '4- Chipre\n>>>')
+            if respuestas == '3':
+                print('Correcto')
+                correctos += 1
+            else:
+                print('Incorrecto')
+    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos,incorrectos
