@@ -38,6 +38,7 @@ Info_jugador_4 = {'Deporte':'No ganado',
                   'Arte':'No ganado',
                   'Correctas':0,
                   'Incorrectas':0}
+lista_categorias_jugador_1 = ['Deporte','Geografia','Arte','Ciencia','Entretenimiento','Historia']
 
 lista_paises_europa = ['Albania','Alemania','Andorra','Austria','Bélgica','Bielorrusia','Bosnia y Herzegovina','Bulgaria',
                         'Chipre','Ciudad del Vaticano','Croacia','Dinamarca','Eslovaquia','Eslovenia','España','Estonia',
@@ -78,7 +79,7 @@ def menu_2 (OPCIONES2):
     return decision_2
 
 def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 1:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Deporte[1])
             respuestas = input('1- 4\n'
@@ -359,11 +360,10 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos,respuestas
 
 def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 2:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Ciencia[1])
             respuestas = input('1- 32\n'
@@ -465,7 +465,7 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
         elif numero_random_2 == 8:
             print(Preguntas_Ciencia[8])
             respuestas = input('1- H2O\n'
-                               '2- El N2SO4\n'
+                               '2- N2SO4\n'
                                '3- SO3\n'
                                '4- N2\n>>>')
             if respuestas == '2':
@@ -644,11 +644,10 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos,respuestas
 
 def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 3:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Geografia[1])
             respuestas = input('1- 195\n'
@@ -914,11 +913,10 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 incorrectos += 1
                 print('Incorrecto')
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos,incorrectos,respuestas
 
 def preguntas_entretenimiento(numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 4:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Entretenimiento[1])
             respuestas = input('>>>')
@@ -1196,11 +1194,10 @@ def preguntas_entretenimiento(numero_random_1,numero_random_2,correctos,incorrec
                 incorrectos += 1
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos, respuestas
 
 def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 5:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Historia[1])
             respuestas = input('1- 1912\n'
@@ -1481,11 +1478,10 @@ def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
                 incorrectos += 1
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos, respuestas
 
 def preguntas_arte(numero_random_1,numero_random_2,correctos,incorrectos):
-    if numero_random_1 == 6:
+    if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Arte[1])
             respuestas = input('1- Piedra del Sol\n'
@@ -1766,5 +1762,4 @@ def preguntas_arte(numero_random_1,numero_random_2,correctos,incorrectos):
                 incorrectos += 1
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
-    print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
     return correctos, incorrectos, respuestas
