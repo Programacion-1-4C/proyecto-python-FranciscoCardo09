@@ -1,23 +1,3 @@
-Preguntas_Geografia = {1: 'Cuantos paises hay en el mundo',
-                       2: 'Cuantas provincias tiene Argentina',
-                       3: 'Cual es rio mas extenso del mundo',
-                       4: 'Cual es el pais mas grande de Europa',
-                       5: 'Cuantos continentes hay en el mundo',
-                       6: 'Cual es un pais de Asia',
-                       7: 'Cual es un pais de America',
-                       8: 'Cual es un pais de Oceania',
-                       9: 'Cual es un pais de Europa',
-                       10: 'Cual es pais de Africa',
-                       11: 'Que oceano divide a Europa y Africa',
-                       12: 'Donde esta la Torre Eiffel',
-                       13: 'Donde esta La Estatua de la Libertad',
-                       14: 'Donde esta el Coliseo Romano',
-                       15: 'En que continentes esta Turquia',
-                       16: 'En que continente esta Peru',
-                       17: 'Donde se encuentra El Cristo Redentor',
-                       18: 'Donde esta el Gran Cañon',
-                       19: 'Donde esta la Torre de Pizza',
-                       20: 'Cual es el pais mas chico del mundo'}
 Preguntas_Entretenimiento = {1: 'Nombra un personaje perteneciente a la familia Simpsons',
                              2: 'Cual es la serie mas larga',
                              3: 'Cual es la pelicula mas larga',
@@ -402,14 +382,119 @@ preguntas_cat = {
         {
             "nombre": "Donde esta la Torre Eiffel",
             "opciones": ['Londres', 'Paris', 'Buenos Aires', 'Moscu'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Donde esta la Estatua de la Libertad",
+            "opciones": ['Miami', 'California', 'Nueva York', 'Washington DC'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Donde esta el Coliseo Romano",
+            "opciones": ['Roma', 'Paris', 'Venecia', 'Ciudad del Vaticano'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "En que continentes esta Turquia",
+            "opciones": ['Asia Y Oceania', 'Asia Y Europa', 'Europa', 'Africa Y Europa'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "En que continentes esta Peru",
+            "opciones": ['Oceania', 'Asia', 'Europa', 'America'],
             "respuesta": 4
+        },
+        {
+            "nombre": "Donde se encuentra el Cristo Redentor",
+            "opciones": ['Brasilia', 'Rio de Janeiro', 'Manaos', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Donde esta el Gran Cañon",
+            "opciones": ['Peru', 'Canada', 'Estados Unidos', 'Mexico'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Donde esta la Torre de Pisa",
+            "opciones": ['Roma', 'Venecia', 'Pisa', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Cual es el pais mas chico del mundo",
+            "opciones": ['Ciudad del Vaticano', 'Luxemburgo', 'Antigua y Barbuda', 'Andorra'],
+            "respuesta": 1
         },
     ],
     'Entretenimiento': [
         {
-            "nombre": "Cual de los siguientes no es de los Simpsons",
+            "nombre": "Cual de los siguientes no es parte de los Simpsons",
             "opciones": ['Maggie', 'Lisa', 'Homero', 'George'],
             "respuesta": 4
+        },
+        {
+            "nombre": "Cual es la serie mas larga",
+            "opciones": ['Guiding Light', 'Doctor Who', 'One Piece', 'Friends'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cual es la pelicula mas larga",
+            "opciones": ['Atlanta', 'Titanic', 'Evolution of a Filipino Family', 'Out 1'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Que pelicula se llevó mas premio",
+            "opciones": ['Ttanic', 'Volver al Futuro', 'Star Wars III', 'El Señor de los Anillos: el retorno del Rey'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "En cual de estas peliculas no actua Robert De Niro",
+            "opciones": ['Taxi Driver', 'Forrest Gump', 'El Irlandes', 'Casino'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'En cual de estas peliculas actua Tom Hanks',
+            "opciones": ['Naufrago', 'Forrest Gump', 'Elvis Presley', 'Todas son correctas'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Completa la canción:\nMamaaa\nJust killed a man\n......\npulled my trigger',
+            "opciones": ['my time has come', 'life had just begun', 'now is dead', 'put a gun against his head'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantos hijos tenia Pepe de Casados con hijos',
+            "opciones": [1, 2, 3, 4],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'En que pelicula actua Guillermo Francella',
+            "opciones": ['Granizo', 'Mi obra maestra', 'El robo del siglo', 'Todas correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantas peliculas tiene Harry Potter',
+            "opciones": [8, 9, 10, 11],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuantas peliculas tiene Star Wars',
+            "opciones": [10, 11, 12, 13],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se llama la tercera pelicula de Star Wars',
+            "opciones": ['La Venganza de los Sith', 'El retorno del Jedi', 'Una nueva esperanza', 'El ultimo Jedi'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'En que año salio la primera pelicula de Los juegos del hambre',
+            "opciones": [2010, 2012, 2016, 2018],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Quien hizo de Thomas Shelby',
+            "opciones": ['Tom Hardy', 'Paul Anderson', 'Cillian Murphy', 'Finn Cole'],
+            "respuesta": 3
         },
     ],
     'Historia': [
