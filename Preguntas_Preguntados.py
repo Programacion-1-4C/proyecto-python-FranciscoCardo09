@@ -1,53 +1,13 @@
-Preguntas_Deporte = {1: 'Cuantos campeonatos ganados tiene Michael Jordan',
-                     2: 'En cuales equipos estuvo Lebron James',
-                     3: 'Cuantos triples metio Curry',
-                     4: 'Que equipo gano la ultima NBA',
-                     5: 'Cual de los siguientes jugadores Agentinos estara en el salon de la fama',
-                     6: 'Cuantos Mundiales tiene Alemania',
-                     7: 'A partir de qué temporada se implantó el VAR en LaLiga',
-                     8: 'Cuantos balones de oro tiene Messi',
-                     9: 'En que equipo debuto Maradona',
-                     10: 'Cuantos mundiales tiene Pele',
-                     11: 'Cuanto mide una cancha de voley de largo',
-                     12: 'Cuantas copas americas tiene Brasil',
-                     13: 'Quienes llegaron a la final en el mundial 2010',
-                     14: 'Quien gano el mundial de voley en 2022',
-                     15: 'Quien gano la ultima competencia de natacion en las olimpiadas',
-                     16: 'Cuál es el tenista con más títulos de la historia',
-                     17: 'Cuanto duro el partido de tenis mas largo de la historia',
-                     18: 'Donde se creo el tenis',
-                     19: 'Cuántos titulos ha ganado Hamilton',
-                     20: 'Quién ganó 4 mundiales consecutivos en la Fórmula 1'}
-Preguntas_Ciencia = {1: 'Cuanto es: 2 + 3x10 + 0',
-                     2: 'Cual es el órgano más grande, visible y pesado del cuerpo',
-                     3: 'Que organo se encarga del equilibrio',
-                     4: 'Cual es la molecula del agua',
-                     5: 'Cuanto es: (1000 + 1214 + 213918) * 0',
-                     6: 'Que descubrio Nobel',
-                     7: 'Que descubrio Newton',
-                     8: 'Cual es la molecula de acido sulfurico',
-                     9: 'Cual es el primer atomo de la tabla periodica',
-                     10: 'Cual es la molecula del dioxido de carbono',
-                     11: 'Cual es la distancia entre la Tierra y la Luna',
-                     12: 'Cual es el diametro de la tierra',
-                     13: 'Cual es la formula de Fuerza',
-                     14: 'Como se llama la primera ley de Newton',
-                     15: 'Como es la formula de la velocidad',
-                     16: 'Como se llama la tercera ley de Newton',
-                     17: 'Que necesitan las plantas para hacer la fotosintesis',
-                     18: 'Cuanto es: 100+10',
-                     19: 'Que descubrio Tesla',
-                     20: 'Que descubrio Einstein'}
 Preguntas_Geografia = {1: 'Cuantos paises hay en el mundo',
                        2: 'Cuantas provincias tiene Argentina',
                        3: 'Cual es rio mas extenso del mundo',
                        4: 'Cual es el pais mas grande de Europa',
                        5: 'Cuantos continentes hay en el mundo',
-                       6: 'Nombra un pais de Asia',
-                       7: 'Nombra un pais de America',
-                       8: 'Nombra un pais de Oceania',
-                       9: 'Nombra un pais de Europa',
-                       10: 'Nombra un pais de Africa',
+                       6: 'Cual es un pais de Asia',
+                       7: 'Cual es un pais de America',
+                       8: 'Cual es un pais de Oceania',
+                       9: 'Cual es un pais de Europa',
+                       10: 'Cual es pais de Africa',
                        11: 'Que oceano divide a Europa y Africa',
                        12: 'Donde esta la Torre Eiffel',
                        13: 'Donde esta La Estatua de la Libertad',
@@ -179,16 +139,291 @@ Preguntas_Tematica_1 = {1: 'Cuando salio el primer GTA',
                         60: 'Cuantos DOOM hay'}
 
 preguntas_cat = {
-    "Deporte":{
-        1: {
+    "Deporte": [
+        {
             "nombre": "Cuantos campeonatos ganados tiene Michael Jordan",
             "opciones": [4, 5, 6, 9],
-            "respuesta": 2
+            "respuesta": 3
         },
-        2: {
+        {
             "nombre": "En cuales equipos estuvo Lebron James",
             "opciones": ["Cavaliers", "Lakers", "Miami Heat", "Todas son correctas"],
             "respuesta": 4
         },
-    }
+        {
+            "nombre": "Cuantos triples metio Curry",
+            "opciones": [3.117, 2.143, 3.013, 3.500],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Que equipo gano la ultima NBA",
+            "opciones": [' Boston Celtics', 'Miami Heat', 'Golden State', 'Lakers'],
+            "respuesta": 3
+         },
+        {
+            "nombre": "Cual de los siguientes jugadores Agentinos estara en el salon de la fama",
+            "opciones": [' Facu Campazzo', 'Manu Ginobili', 'Luis Scola', 'Leandro Bolmmaro'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Cuantos Mundiales tiene Alemania",
+            "opciones": [4, 5, 6, 7],
+            "respuesta": 1
+        },
+        {
+            "nombre": "A partir de qué temporada se implantó el VAR en LaLiga",
+            "opciones": ['2015/16', '2018/19', '2019/20', '2020/21'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Cuantos balones de oro tiene Messi",
+            "opciones": [5, 6, 7, 8],
+            "respuesta": 3
+        },
+        {
+            "nombre": "En que equipo debuto Maradona",
+            "opciones": ['Barcelona', 'Roma', 'Boca', 'Argentinos Juniors'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Cuantos mundiales tiene Pele",
+            "opciones": [1, 2, 3, 4],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Cuanto mide una cancha de voley de largo",
+            "opciones": ['18m', '20m', '25m', 'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cuantas copas americas tiene Brasil",
+            "opciones": ['3', '4', '6', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Quienes llegaron a la final en el mundial 2010 de futbol",
+            "opciones": ['España-Brasil', 'Holanda-Portugal', 'España-Holanda', 'Ninguna de las anteriores'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Quien gano el mundial de voley en 2022",
+            "opciones": ['España', 'Croacia', 'Francia', 'Estado Unidos'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Quien gano la ultima competencia de natacion en las olimpiadas",
+            "opciones": ['Marta Fiedina', 'Yukiko Inui', 'Zopie Andrew Spitz', 'Caeleb Dressel'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Cuál es el tenista con más títulos de la historia",
+            "opciones": ['Rafael Nadal', 'Del Potro', 'Novak Djokovic', 'Roger Federer'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cuanto duro el partido de tenis mas largo de la historia",
+            "opciones": ['9:45hs', '10hs', '11:30hs', '1hs'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Donde se creo el tenis",
+            "opciones": ['Italia', 'Estados Unidos', 'Inglaterra', 'Francia'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Donde se creo el tenis",
+            "opciones": [6, 7, 9, 11],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Quién ganó 4 mundiales consecutivos en la Fórmula 1",
+            "opciones": ['Lando Norris', 'Max Verstappen', 'Lewis Hamilton', 'Sebastian Vettel'],
+            "respuesta": 4
+        }
+    ],
+    'Ciencia': [
+        {
+            "nombre": "Cuanto es: 2 + 3x10 + 0",
+            "opciones": [32, 35, 36, 50],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cual es el órgano más grande, visible y pesado del cuerpo",
+            "opciones": ['La piel', 'La oreja', 'El intestino grueso', 'El higado'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que organo se encarga del equilibrio',
+            "opciones": ['Los pies', 'El oido', 'El cerebelo', 'Los pulmones'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual es la molecula del agua',
+            "opciones": ['CO2', 'K1O2', 'H2O2', 'H2SO4'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuanto es: (1000 + 1214 + 213918) * 0',
+            "opciones": ['142154', '21332', '226242', 'Ninguna es correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que descubrio Nobel',
+            "opciones": ['La Dinamita', 'La Gravedad', 'La Relatividad', 'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que descubrio Newton',
+            "opciones": ['La Dinamita', 'La Gravedad', 'La Relatividad', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual es la molecula de acido sulfurico',
+            "opciones": ['SO3', 'K1O2', 'H2O2', 'N2SO4'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cual es el primer atomo de la tabla periodica',
+            "opciones": ['Helio', 'Oxígeno', 'Hidrogeno', 'Níquel'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cual es la molecula del dioxido de carbono',
+            "opciones": ['SO3', 'K1O2', 'CO2', 'N2SO4'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cual es la distancia entre la Tierra y la Luna',
+            "opciones": ['320,000 km', '384,400 km', '384,960 km', '395,420 km'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual es el diametro de la tierra',
+            "opciones": ['12,742 km', '10,742 km', '20,000 km', '38,400 km'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama la primera ley de Newton',
+            "opciones": ['Ley de Inercia', 'Ley de Acción-Reacción', 'Ley de Fuerza,masa,aceleración',
+                         'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como es la formula de la velocidad',
+            "opciones": ['masa x aceleracion', 'velocidad / tiempo', 'masa / tiempo', 'distancia x tiempo'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama la tercera ley de Newton',
+            "opciones": ['Ley de Inercia', 'Ley de Acción-Reacción', 'Ley de Fuerza,masa,aceleración',
+                         'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que necesitan las plantas para hacer la fotosintesis',
+            "opciones": ['Sol, CO2, Clorofila', 'Sol, CO2, Clorofila, Agua y Sales minerales', ' Agua',
+                         'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuanto es: 100+10',
+            "opciones": ['110', '130', ' 19317318921', '0'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que descubrio Tesla',
+            "opciones": ['Bobina de Tesla', 'Motor eléctrico', 'La corriente alterna', 'Todas son correctas'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que descubrio Einstein',
+            "opciones": ['Teoría de la relatividad especial', ' Teoría de campo unificado', 'E=mc2',
+                         'Todas son correctas'],
+            "respuesta": 4
+        },
+    ],
+
+    'Geografia': [
+        {
+            "nombre": "Cuantos paises hay en el mundo",
+            "opciones": [195, 197, 225, 235],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Cuantas provincias tiene Argentina",
+            "opciones": [19, 22, 23, 25],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Cual es rio mas extenso del mundo",
+            "opciones": ['Rio Tiber', 'Rio Cuarto', 'Rio Nilo', 'Rio Amazonas'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Cual es el pais mas grande de Europa",
+            "opciones": ['Rusia', 'España', 'Noruega', 'Polonia'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cuantos continentes hay en el mundo",
+            "opciones": [5, 6, 7, 8],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Cual es un pais de Asia",
+            "opciones": ['Chipre', 'San Marino', 'Laos', 'Kiribati'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Cual es un pais de America",
+            "opciones": ['San Bartolomé', 'Guinea-Bissau', 'Mauricio', 'Chad'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Cual es un pais de Europa",
+            "opciones": ['Camerún', 'Liechtenstein', 'Barbados', 'Grenada'],
+            "respuesta": 2
+        },
+        {
+            "nombre": "Cual es un pais de Oceania",
+            "opciones": ['Maldivas', 'Timor Oriental', 'Tonga', 'Islas Caimán'],
+            "respuesta": 3
+        },
+        {
+            "nombre": "Cual es un pais de Africa",
+            "opciones": ['Malaui', 'Liechtenstein', 'Sri Lanka', 'Mónaco'],
+            "respuesta": 1
+        },
+        {
+            "nombre": "Que oceano divide a Europa y Africa",
+            "opciones": ['Atlantico', 'Pacifico', 'Indico', 'Ninguna es correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": "Donde esta la Torre Eiffel",
+            "opciones": ['Londres', 'Paris', 'Buenos Aires', 'Moscu'],
+            "respuesta": 4
+        },
+    ],
+    'Entretenimiento': [
+        {
+            "nombre": "Cual de los siguientes no es de los Simpsons",
+            "opciones": ['Maggie', 'Lisa', 'Homero', 'George'],
+            "respuesta": 4
+        },
+    ],
+    'Historia': [
+        {
+            "nombre": "En que año empezó la Primera Guerra Mundial",
+            "opciones": [1911, 1913, 1914, 1920],
+            "respuesta": 3
+        },
+    ],
+    'Arte': [
+        {
+            "nombre": 'Cuál es la obra artística mexica más grande',
+            "opciones": ['Monolito de Tlaltecuhtli', 'Piedra del Sol', 'Frida y Dirgo Rivera', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+    ]
 }
