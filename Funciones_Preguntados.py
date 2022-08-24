@@ -1,4 +1,6 @@
-from Preguntas_Preguntados import Preguntas_Ciencia,Preguntas_Deporte,Preguntas_Geografia,Preguntas_Historia,Preguntas_Arte,Preguntas_Entretenimiento
+from Preguntas_Preguntados import Preguntas_Ciencia, Preguntas_Deporte, Preguntas_Geografia, Preguntas_Historia, \
+    Preguntas_Arte, Preguntas_Entretenimiento, preguntas_deporte_2, preguntas_cat
+import random
 
 OPCIONES = ['Modo Normal',
             'De 2 a 4 jugadores',
@@ -6,80 +8,137 @@ OPCIONES = ['Modo Normal',
 OPCIONES2 = ['Videojuegos',
              'Marvel',
              'Series']
-Info_jugador_1 = {'Deporte':'No ganado',
-                  'Ciencia':'No ganado',
-                  'Geografia':'No ganado',
-                  'Entretenimiento':'No ganado',
-                  'Historia':'No ganado',
-                  'Arte':'No ganado',
-                  'Correctas':0,
-                  'Incorrectas':0}
-Info_jugador_2 = {'Deporte':'No ganado',
-                  'Ciencia':'No ganado',
-                  'Geografia':'No ganado',
-                  'Entretenimiento':'No ganado',
-                  'Historia':'No ganado',
-                  'Arte':'No ganado',
-                  'Correctas':0,
-                  'Incorrectas':0}
-Info_jugador_3 = {'Deporte':'No ganado',
-                  'Ciencia':'No ganado',
-                  'Geografia':'No ganado',
-                  'Entretenimiento':'No ganado',
-                  'Historia':'No ganado',
-                  'Arte':'No ganado',
-                  'Correctas':0,
-                  'Incorrectas':0}
-Info_jugador_4 = {'Deporte':'No ganado',
-                  'Ciencia':'No ganado',
-                  'Geografia':'No ganado',
-                  'Entretenimiento':'No ganado',
-                  'Historia':'No ganado',
-                  'Arte':'No ganado',
-                  'Correctas':0,
-                  'Incorrectas':0}
-lista_categorias_jugador_1 = ['Deporte','Geografia','Arte','Ciencia','Entretenimiento','Historia']
-lista_categorias_jugador_2 = ['Deporte','Geografia','Arte','Ciencia','Entretenimiento','Historia']
 
-lista_paises_europa = ['Albania','Alemania','Andorra','Austria','Bélgica','Bielorrusia','Bosnia y Herzegovina','Bulgaria',
-                        'Chipre','Ciudad del Vaticano','Croacia','Dinamarca','Eslovaquia','Eslovenia','España','Estonia',
-                        'Finlandia','Francia','Grecia','Hungría','Irlanda','Islandia','Italia','Letonia','Liechtenstein','Lituania',
-                        'Luxemburgo','Malta','Moldavia','Mónaco','Montenegro','Noruega','Países Bajos','Polonia','Portugal','Reino Unido'
-                        'República Checa','República de Macedonia','Rumania','Rusia','San Marino','Serbia','Suecia','Suiza','Ucrania']
-lista_paises_asia = ['Afganistan','Arabia Saudita','Armenia','Azerbaiyán','Bangladés','Baréin','Birmania','Brunéi','Bután',
-                       'Camboya','Catar','China','Corea del Norte','Corea del Sur','Emiratos Árabes Unidos','Filipinas','Georgia',
-                       'India','Indonesia','Irak','Irán','Israel','Japón','Jordania','Kazajistán','Kirguistán','Kuwait','Laos',
-                       'Líbano','Maldivas','Malasia','Mongolia','Nepal','Omán','Pakistán','Rusia','Singapur','Siria','Sri Lanka',
-                       'Tayikistán','Tailandia','Timor Oriental','Turquía','Turkmenistán','Uzbekistán','Vietnam','Yemen']
-lista_paises_america = ['Antigua y Barbuda','Aruba','Bahamas','Barbados','Cuba','Dominica','Grenada','Guadalupe','Haití','Islas Caimán',
-                        'Islas Turcas y Caicos','Islas Vírgenes','Jamaica','Martinica','Puerto Rico','República Dominicana',
-                        'San Bartolomé','San Cristóbal y Nieves','San Vicente y las Granadinas','Santa Lucía','Trinidad y Tobago',
-                        'Belice','Costa Rica','El Salvador','Guatemala','Honduras','Nicaragua','Panamá','Argentina','Bolivia','Brasil','Chile',
-                        'Colombia','Ecuador','Guyana','Guyana Francesa','Paraguay','Perú','Suriname','Uruguay','Venezuela','México']
-lista_paises_oceania = ['Australia','Nueva Zelanda','Papúa Nueva Guinea','Fiyi','Islas Marshall','Islas Salomón','Kiribati',
-                        'Tonga','Samoa','Tuvalu','Vanuatu','Micronesia','Nauru','Palaos']
-lista_paises_africa = ['Angola','Argelia','Benín, Porto','Botsuana','Burkina Faso','Burundi','Cabo Verde','Camerún',
-                       'Centroafricana','Comores','Costa de Marfil','Chad','Egipto','Eritrea','Etiopía','Gabón','Gambia','Ghana',
-                       'Guinea','Guinea-Bissau','Guinea Ecuatorial','Kenia','Lesoto','Liberia','Libia','Madagascar','Malaui','Malí',
-                       'Marruecos','Mauricio','Mauritania','Mozambique','Namibia','Níger','Nigeria','Ruanda','República del Congo',
-                       'República Democrática del congo','Santo Tomé y Príncipe','Senegal','Seychelles','Sierra Leona','Somalia',
-                       'Sudáfrica','Sudán','Sudán del Sur','Suazilandia','Tanzania','Túnez','Togo','Uganda','Yibuti','Zambia',
+CATEGORIAS = [
+    'Deporte',
+    'Ciencia',
+    'Geografia',
+    'Entretenimiento',
+    'Historia',
+    'Arte'
+]
+Info_jugador_1 = {'Deporte': 'No ganado',
+                  'Ciencia': 'No ganado',
+                  'Geografia': 'No ganado',
+                  'Entretenimiento': 'No ganado',
+                  'Historia': 'No ganado',
+                  'Arte': 'No ganado'}
+Info_jugador_2 = {'Deporte': 'No ganado',
+                  'Ciencia': 'No ganado',
+                  'Geografia': 'No ganado',
+                  'Entretenimiento': 'No ganado',
+                  'Historia': 'No ganado',
+                  'Arte': 'No ganado'}
+Info_jugador_3 = {'Deporte': 'No ganado',
+                  'Ciencia': 'No ganado',
+                  'Geografia': 'No ganado',
+                  'Entretenimiento': 'No ganado',
+                  'Historia': 'No ganado',
+                  'Arte': 'No ganado'}
+Info_jugador_4 = {'Deporte': 'No ganado',
+                  'Ciencia': 'No ganado',
+                  'Geografia': 'No ganado',
+                  'Entretenimiento': 'No ganado',
+                  'Historia': 'No ganado',
+                  'Arte': 'No ganado'}
+lista_categorias_jugador_1 = ['Deporte', 'Geografia', 'Arte', 'Ciencia', 'Entretenimiento', 'Historia']
+lista_categorias_jugador_2 = ['Deporte', 'Geografia', 'Arte', 'Ciencia', 'Entretenimiento', 'Historia']
+lista_categorias_jugador_3 = ['Deporte', 'Geografia', 'Arte', 'Ciencia', 'Entretenimiento', 'Historia']
+lista_categorias_jugador_4 = ['Deporte', 'Geografia', 'Arte', 'Ciencia', 'Entretenimiento', 'Historia']
+lista_ganadora = []
+
+lista_paises_europa = ['Albania', 'Alemania', 'Andorra', 'Austria', 'Bélgica', 'Bielorrusia', 'Bosnia y Herzegovina',
+                       'Bulgaria',
+                       'Chipre', 'Ciudad del Vaticano', 'Croacia', 'Dinamarca', 'Eslovaquia', 'Eslovenia', 'España',
+                       'Estonia',
+                       'Finlandia', 'Francia', 'Grecia', 'Hungría', 'Irlanda', 'Islandia', 'Italia', 'Letonia',
+                       'Liechtenstein', 'Lituania',
+                       'Luxemburgo', 'Malta', 'Moldavia', 'Mónaco', 'Montenegro', 'Noruega', 'Países Bajos', 'Polonia',
+                       'Portugal', 'Reino Unido'
+                                   'República Checa', 'República de Macedonia', 'Rumania', 'Rusia', 'San Marino',
+                       'Serbia', 'Suecia', 'Suiza', 'Ucrania']
+lista_paises_asia = ['Afganistan', 'Arabia Saudita', 'Armenia', 'Azerbaiyán', 'Bangladés', 'Baréin', 'Birmania',
+                     'Brunéi', 'Bután',
+                     'Camboya', 'Catar', 'China', 'Corea del Norte', 'Corea del Sur', 'Emiratos Árabes Unidos',
+                     'Filipinas', 'Georgia',
+                     'India', 'Indonesia', 'Irak', 'Irán', 'Israel', 'Japón', 'Jordania', 'Kazajistán', 'Kirguistán',
+                     'Kuwait', 'Laos',
+                     'Líbano', 'Maldivas', 'Malasia', 'Mongolia', 'Nepal', 'Omán', 'Pakistán', 'Rusia', 'Singapur',
+                     'Siria', 'Sri Lanka',
+                     'Tayikistán', 'Tailandia', 'Timor Oriental', 'Turquía', 'Turkmenistán', 'Uzbekistán', 'Vietnam',
+                     'Yemen']
+lista_paises_america = ['Antigua y Barbuda', 'Aruba', 'Bahamas', 'Barbados', 'Cuba', 'Dominica', 'Grenada', 'Guadalupe',
+                        'Haití', 'Islas Caimán',
+                        'Islas Turcas y Caicos', 'Islas Vírgenes', 'Jamaica', 'Martinica', 'Puerto Rico',
+                        'República Dominicana',
+                        'San Bartolomé', 'San Cristóbal y Nieves', 'San Vicente y las Granadinas', 'Santa Lucía',
+                        'Trinidad y Tobago',
+                        'Belice', 'Costa Rica', 'El Salvador', 'Guatemala', 'Honduras', 'Nicaragua', 'Panamá',
+                        'Argentina', 'Bolivia', 'Brasil', 'Chile',
+                        'Colombia', 'Ecuador', 'Guyana', 'Guyana Francesa', 'Paraguay', 'Perú', 'Suriname', 'Uruguay',
+                        'Venezuela', 'México']
+lista_paises_oceania = ['Australia', 'Nueva Zelanda', 'Papúa Nueva Guinea', 'Fiyi', 'Islas Marshall', 'Islas Salomón',
+                        'Kiribati',
+                        'Tonga', 'Samoa', 'Tuvalu', 'Vanuatu', 'Micronesia', 'Nauru', 'Palaos']
+lista_paises_africa = ['Angola', 'Argelia', 'Benín, Porto', 'Botsuana', 'Burkina Faso', 'Burundi', 'Cabo Verde',
+                       'Camerún',
+                       'Centroafricana', 'Comores', 'Costa de Marfil', 'Chad', 'Egipto', 'Eritrea', 'Etiopía', 'Gabón',
+                       'Gambia', 'Ghana',
+                       'Guinea', 'Guinea-Bissau', 'Guinea Ecuatorial', 'Kenia', 'Lesoto', 'Liberia', 'Libia',
+                       'Madagascar', 'Malaui', 'Malí',
+                       'Marruecos', 'Mauricio', 'Mauritania', 'Mozambique', 'Namibia', 'Níger', 'Nigeria', 'Ruanda',
+                       'República del Congo',
+                       'República Democrática del congo', 'Santo Tomé y Príncipe', 'Senegal', 'Seychelles',
+                       'Sierra Leona', 'Somalia',
+                       'Sudáfrica', 'Sudán', 'Sudán del Sur', 'Suazilandia', 'Tanzania', 'Túnez', 'Togo', 'Uganda',
+                       'Yibuti', 'Zambia',
                        'Zimbabue']
-lista_familia_simpsons = ['Homero','Maggie','Lisa','Bart','Marge','Abraham','Mona']
+lista_familia_simpsons = ['Homero', 'Maggie', 'Lisa', 'Bart', 'Marge', 'Abraham', 'Mona']
 
-def menu_1 (OPCIONES):
+
+def menu_1(OPCIONES):
     for num, opciones in enumerate(OPCIONES):
         print(f'{num + 1}. {opciones}')
     decision = input(f'Elija un modo (1-{len(OPCIONES)}): ')
     return decision
 
-def menu_2 (OPCIONES2):
+
+def menu_2(OPCIONES2):
     for num, opciones in enumerate(OPCIONES2):
         print(f'{num + 1}. {opciones}')
     decision_2 = input(f'Elija una tematica (1-{len(OPCIONES2)}): ')
     return decision_2
 
-def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas(numero_random_1, numero_random_2, correctos, incorrectos, categoria):
+    if numero_random_1 != 7:
+        pregunta = preguntas_cat[categoria][numero_random_2]
+        print(pregunta["nombre"])
+        texto_opciones = ""
+        for i, opcion in enumerate(pregunta["opciones"]):
+            texto_opciones += f"{i}- {opcion}"
+        respuesta = input(texto_opciones + "\n>>>")
+        if respuesta == pregunta["respuesta"]:
+            respuesta = True
+            correctos += 1
+        else:
+            respuesta = False
+            incorrectos += 1
+        print(respuesta)
+        return correctos, incorrectos, respuesta
+
+
+def coronita_jugador(respuesta, contador_incorrectos, lista_categorias, info_jugador, categoria):
+    if respuesta:
+        lista_categorias.remove(categoria)
+        info_jugador[categoria] = 'Ganado'
+    elif respuesta:
+        contador_incorrectos += 1
+    return lista_categorias, info_jugador
+
+
+def preguntas_deporte(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Deporte[1])
@@ -361,9 +420,11 @@ def preguntas_deporte (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
-    return correctos, incorrectos,respuestas
+    return correctos, incorrectos, respuestas
 
-def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas_ciencia(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Ciencia[1])
@@ -645,9 +706,11 @@ def preguntas_ciencia (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
                 incorrectos += 1
-    return correctos, incorrectos,respuestas
+    return correctos, incorrectos, respuestas
 
-def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas_geografia(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Geografia[1])
@@ -722,7 +785,7 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
         if numero_random_2 == 6:
             print(Preguntas_Geografia[6])
             respuestas = input('>>>')
-            if respuestas in lista_paises_europa:
+            if respuestas in lista_paises_asia:
                 respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
@@ -892,7 +955,7 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                                '2- Italia\n'
                                '3- Canadá\n'
                                '4- Estados Unidos\n>>>')
-            if respuestas == '4':
+            if respuestas == '1':
                 respuestas = 'Correcto'
                 print('Correcto')
                 correctos += 1
@@ -914,9 +977,11 @@ def preguntas_geografia (numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 incorrectos += 1
                 print('Incorrecto')
-    return correctos,incorrectos,respuestas
+    return correctos, incorrectos, respuestas
 
-def preguntas_entretenimiento(numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas_entretenimiento(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Entretenimiento[1])
@@ -1197,7 +1262,9 @@ def preguntas_entretenimiento(numero_random_1,numero_random_2,correctos,incorrec
                 print('Incorrecto')
     return correctos, incorrectos, respuestas
 
-def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas_historia(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Historia[1])
@@ -1481,7 +1548,9 @@ def preguntas_historia(numero_random_1,numero_random_2,correctos,incorrectos):
                 print('Incorrecto')
     return correctos, incorrectos, respuestas
 
-def preguntas_arte(numero_random_1,numero_random_2,correctos,incorrectos):
+
+def preguntas_arte(numero_random_1, numero_random_2, correctos, incorrectos):
+    global respuestas
     if numero_random_1 != 7:
         if numero_random_2 == 1:
             print(Preguntas_Arte[1])
@@ -1764,3 +1833,707 @@ def preguntas_arte(numero_random_1,numero_random_2,correctos,incorrectos):
                 respuestas = 'Incorrecto'
                 print('Incorrecto')
     return correctos, incorrectos, respuestas
+
+
+def jugador_1(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, correctos, incorrectos, i):
+    if respuestas == 'Correcto':
+        contador_correctos_jugador_1 += 1
+        if contador_correctos_jugador_1 == 3:
+            print('Elegí la categoria')
+            print(lista_categorias_jugador_1)
+            eleccion = input('>>>')
+            if eleccion == 'Deporte' or eleccion == 'deporte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_deporte(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Deporte')
+                    Info_jugador_1['Deporte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            elif eleccion == 'Arte' or eleccion == 'arte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_arte(numero_random_1, numero_random_2, correctos,
+                                                                    incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Arte')
+                    Info_jugador_1['Arte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            elif eleccion == 'Entretenimiento' or eleccion == 'entretenimiento':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_entretenimiento(numero_random_1, numero_random_2,
+                                                                               correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Entretenimiento')
+                    Info_jugador_1['Entretenimiento'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            elif eleccion == 'Ciencia' or eleccion == 'ciencia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_ciencia(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Ciencia')
+                    Info_jugador_1['Ciencia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            elif eleccion == 'Geografia' or eleccion == 'geografia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_geografia(numero_random_1, numero_random_2, correctos,
+                                                                         incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Geografia')
+                    Info_jugador_1['Greografia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            elif eleccion == 'Historia' or eleccion == 'historia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_historia(numero_random_1, numero_random_2, correctos,
+                                                                        incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_1.remove('Historia')
+                    Info_jugador_1['Historia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_1 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_1 += 1
+                    contador_correctos_jugador_1 = 0
+            else:
+                pass
+        else:
+            pass
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+    return contador_correctos_jugador_1, contador_incorrectos_jugador_1, i, lista_categorias_jugador_1, Info_jugador_1, respuestas
+
+
+def coronita_jugador_1_Deporte(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Deporte')
+        Info_jugador_1['Deporte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def coronita_jugador_1_Arte(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Arte')
+        Info_jugador_1['Arte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def coronita_jugador_1_Entretenimiento(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Entretenimiento')
+        Info_jugador_1['Entretenimiento'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def coronita_jugador_1_Ciencia(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Ciencia')
+        Info_jugador_1['Ciencia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def coronita_jugador_1_Geografia(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Geografia')
+        Info_jugador_1['Greografia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def coronita_jugador_1_Historia(respuestas, contador_correctos_jugador_1, contador_incorrectos_jugador_1, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_1.remove('Historia')
+        Info_jugador_1['Historia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_1 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_1 += 1
+        contador_correctos_jugador_1 = 0
+    return i, lista_categorias_jugador_1, Info_jugador_1, contador_correctos_jugador_1
+
+
+def jugador_2(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, correctos, incorrectos, i):
+    if respuestas == 'Correcto':
+        contador_correctos_jugador_2 += 1
+        if contador_correctos_jugador_2 == 3:
+            print('Elegí la categoria')
+            print(lista_categorias_jugador_2)
+            eleccion = input('>>>')
+            if eleccion == 'Deporte' or eleccion == 'deporte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_deporte(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Deporte')
+                    Info_jugador_2['Deporte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            elif eleccion == 'Arte' or eleccion == 'arte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_arte(numero_random_1, numero_random_2, correctos,
+                                                                    incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Arte')
+                    Info_jugador_2['Arte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            elif eleccion == 'Entretenimiento' or eleccion == 'entretenimiento':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_entretenimiento(numero_random_1, numero_random_2,
+                                                                               correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Entretenimiento')
+                    Info_jugador_1['Entretenimiento'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            elif eleccion == 'Ciencia' or eleccion == 'ciencia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_ciencia(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Ciencia')
+                    Info_jugador_2['Ciencia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            elif eleccion == 'Geografia' or eleccion == 'geografia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_geografia(numero_random_1, numero_random_2, correctos,
+                                                                         incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Geografia')
+                    Info_jugador_2['Greografia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            elif eleccion == 'Historia' or eleccion == 'historia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_historia(numero_random_1, numero_random_2, correctos,
+                                                                        incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_2.remove('Historia')
+                    Info_jugador_2['Historia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_2 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_2 += 1
+                    contador_correctos_jugador_2 = 0
+            else:
+                pass
+        else:
+            pass
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+    return contador_correctos_jugador_2, contador_incorrectos_jugador_2, i, lista_categorias_jugador_2, Info_jugador_2, respuestas
+
+
+def coronita_jugador_2_Deporte(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Deporte')
+        Info_jugador_2['Deporte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def coronita_jugador_2_Arte(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Arte')
+        Info_jugador_2['Arte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def coronita_jugador_2_Entretenimiento(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Entretenimiento')
+        Info_jugador_2['Entretenimiento'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def coronita_jugador_2_Ciencia(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Ciencia')
+        Info_jugador_2['Ciencia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def coronita_jugador_2_Geografia(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Geografia')
+        Info_jugador_2['Greografia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def coronita_jugador_2_Historia(respuestas, contador_correctos_jugador_2, contador_incorrectos_jugador_2, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_2.remove('Historia')
+        Info_jugador_2['Historia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_2 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_2 += 1
+        contador_correctos_jugador_2 = 0
+    return i, lista_categorias_jugador_2, Info_jugador_2, contador_correctos_jugador_2
+
+
+def jugador_3(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, correctos, incorrectos, i):
+    if respuestas == 'Correcto':
+        contador_correctos_jugador_3 += 1
+        if contador_correctos_jugador_3 == 3:
+            print('Elegí la categoria')
+            print(lista_categorias_jugador_3)
+            eleccion = input('>>>')
+            if eleccion == 'Deporte' or eleccion == 'deporte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_deporte(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Deporte')
+                    Info_jugador_3['Deporte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            elif eleccion == 'Arte' or eleccion == 'arte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_arte(numero_random_1, numero_random_2,
+                                                                    correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Arte')
+                    Info_jugador_3['Arte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            elif eleccion == 'Entretenimiento' or eleccion == 'entretenimiento':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_entretenimiento(numero_random_1,
+                                                                               numero_random_2, correctos,
+                                                                               incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Entretenimiento')
+                    Info_jugador_3['Entretenimiento'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            elif eleccion == 'Ciencia' or eleccion == 'ciencia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_ciencia(numero_random_1, numero_random_2,
+                                                                       correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Ciencia')
+                    Info_jugador_3['Ciencia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            elif eleccion == 'Geografia' or eleccion == 'geografia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_geografia(numero_random_1, numero_random_2,
+                                                                         correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Geografia')
+                    Info_jugador_3['Greografia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            elif eleccion == 'Historia' or eleccion == 'historia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_historia(numero_random_1, numero_random_2, correctos,
+                                                                        incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_3.remove('Historia')
+                    Info_jugador_2['Historia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_3 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_3 += 1
+                    contador_correctos_jugador_3 = 0
+            else:
+                pass
+        else:
+            pass
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+    return contador_correctos_jugador_3, contador_incorrectos_jugador_3, i, lista_categorias_jugador_3, Info_jugador_3, respuestas
+
+
+def coronita_jugador_3_Deporte(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Deporte')
+        Info_jugador_3['Deporte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def coronita_jugador_3_Arte(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Arte')
+        Info_jugador_3['Arte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def coronita_jugador_3_Entretenimiento(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Entretenimiento')
+        Info_jugador_3['Entretenimiento'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def coronita_jugador_3_Ciencia(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Ciencia')
+        Info_jugador_3['Ciencia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def coronita_jugador_3_Geografia(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Geografia')
+        Info_jugador_3['Greografia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def coronita_jugador_3_Historia(respuestas, contador_correctos_jugador_3, contador_incorrectos_jugador_3, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_3.remove('Historia')
+        Info_jugador_3['Historia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_3 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_3 += 1
+        contador_correctos_jugador_3 = 0
+    return i, lista_categorias_jugador_3, Info_jugador_3, contador_correctos_jugador_3
+
+
+def jugador_4(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, correctos, incorrectos, i):
+    if respuestas == 'Correcto':
+        contador_correctos_jugador_4 += 1
+        if contador_correctos_jugador_4 == 3:
+            print('Elegí la categoria')
+            print(lista_categorias_jugador_4)
+            eleccion = input('>>>')
+            if eleccion == 'Deporte' or eleccion == 'deporte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_deporte(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Deporte')
+                    Info_jugador_4['Deporte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            elif eleccion == 'Arte' or eleccion == 'arte':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_arte(numero_random_1, numero_random_2, correctos,
+                                                                    incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Arte')
+                    Info_jugador_4['Arte'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            elif eleccion == 'Entretenimiento' or eleccion == 'entretenimiento':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_entretenimiento(numero_random_1, numero_random_2,
+                                                                               correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Entretenimiento')
+                    Info_jugador_4['Entretenimiento'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            elif eleccion == 'Ciencia' or eleccion == 'ciencia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_ciencia(numero_random_1, numero_random_2, correctos,
+                                                                       incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Ciencia')
+                    Info_jugador_4['Ciencia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            elif eleccion == 'Geografia' or eleccion == 'geografia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_geografia(numero_random_1, numero_random_2,
+                                                                         correctos, incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Geografia')
+                    Info_jugador_4['Greografia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            elif eleccion == 'Historia' or eleccion == 'historia':
+                numero_random_1 = random.randint(1, 6)
+                numero_random_2 = random.randint(1, 20)
+                correctos, incorrectos, respuestas = preguntas_historia(numero_random_1, numero_random_2, correctos,
+                                                                        incorrectos)
+                if respuestas == 'Correcto':
+                    lista_categorias_jugador_4.remove('Historia')
+                    Info_jugador_4['Historia'] = 'Ganado'
+                    i += 1
+                    contador_correctos_jugador_4 = 0
+                elif respuestas == 'Incorrecto':
+                    i += 1
+                    contador_incorrectos_jugador_4 += 1
+                    contador_correctos_jugador_4 = 0
+            else:
+                pass
+        else:
+            pass
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+    return contador_correctos_jugador_4, contador_incorrectos_jugador_4, i, lista_categorias_jugador_4, Info_jugador_4, respuestas
+
+
+def coronita_jugador_4_Deporte(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_4.remove('Deporte')
+        Info_jugador_4['Deporte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_4 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+        contador_correctos_jugador_4 = 0
+    return i, lista_categorias_jugador_4, Info_jugador_4, contador_correctos_jugador_4
+
+
+def coronita_jugador_4_Arte(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_4.remove('Arte')
+        Info_jugador_4['Arte'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_4 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+        contador_correctos_jugador_4 = 0
+    return i, lista_categorias_jugador_4, Info_jugador_4, contador_correctos_jugador_4
+
+
+def coronita_jugador_4_Entretenimiento(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_4.remove('Entretenimiento')
+        Info_jugador_4['Entretenimiento'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_4 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+        contador_correctos_jugador_4 = 0
+    return i, lista_categorias_jugador_4, Info_jugador_4, contador_correctos_jugador_4
+
+
+def coronita_jugador_4_Ciencia(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_4.remove('Ciencia')
+        Info_jugador_4['Ciencia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_4 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+        contador_correctos_jugador_4 = 0
+    return i, lista_categorias_jugador_4, Info_jugador_4, contador_correctos_jugador_4
+
+
+def coronita_jugador_4_Geografia(respuestas, contador_correctos_jugador_4, contador_incorrectos_jugador_4, i):
+    if respuestas == 'Correcto':
+        lista_categorias_jugador_4.remove('Geografia')
+        Info_jugador_4['Greografia'] = 'Ganado'
+        i += 1
+        contador_correctos_jugador_4 = 0
+    elif respuestas == 'Incorrecto':
+        i += 1
+        contador_incorrectos_jugador_4 += 1
+        contador_correctos_jugador_4 = 0
+    return i, lista_categorias_jugador_4, Info_jugador_4, contador_correctos_jugador_4
