@@ -1,79 +1,4 @@
-Preguntas_Entretenimiento = {1: 'Nombra un personaje perteneciente a la familia Simpsons',
-                             2: 'Cual es la serie mas larga',
-                             3: 'Cual es la pelicula mas larga',
-                             4: 'Que pelicula se llevo mas premios',
-                             5: 'En cual de estas peliculas no actua Robert De Niro',
-                             6: 'En cual de estas peliculas actua Tom Hanks',
-                             7: 'Completa la canción:\nMamaaa\nJust killed a man\n......\nNow he is dead',
-                             8: 'Cuantos hijos tenia Pepe de Casados con hijos',
-                             9: 'En que pelicula actua Guillermo Francella',
-                             10: 'Cuantas peliculas tiene Harry Potter',
-                             11: 'Cuantas peliculas tiene Star Wars',
-                             12: 'Como se llama la tercera pelicula de Star Wars',
-                             13: 'En que año salio la primera pelicula de Los juegos del hambre',
-                             14: 'Quien hizo de Thomas Shelby',
-                             15: 'Quien hizo de Thor',
-                             16: 'Quien dirijio Interestellar',
-                             17: 'Cuantas peliculas hay de Jurasic Park',
-                             18: 'En que año salio la primera pelica de Star Wars',
-                             19: 'Completa la cancion:\nTell me why\nAint nothin but a heartache\n....',
-                             20: 'Quien protagonizo Forrest Gump'}
-Preguntas_Historia = {1: 'En que año inicio la Primera Guerra Mundial',
-                      2: 'Quien descubrio America',
-                      3: 'Cuando se realizo la Revolucion Industrial',
-                      4: 'Cuando se realizo la Revolucion Francesa',
-                      5: 'En que año se creo la primera maquina a vapor',
-                      6: 'Cuando cayó el muro de Berlín',
-                      7: 'Cuando se descubrio America',
-                      8: 'Cuanto duro la primera guerra mundial',
-                      9: 'Cuando se creo la Constitucion Argentina',
-                      10: 'Cuando se Independizo USA',
-                      11: 'Cuando se Independizo Argentina',
-                      12: 'Cuando empezo el Paleolitico',
-                      13: 'Como se extinguieron los dinosaurios',
-                      14: 'Cual fue la primera pandemia del mundo',
-                      15: 'Como murio Hitler',
-                      16: 'Quien fue Napoleon Bonaparte',
-                      17: 'En que periodo fue el Renacimiento',
-                      18: 'Quien esta en el billete de 100 pesos',
-                      19: 'Que se festeja el 9 de julio',
-                      20: 'Quien creo la bandera Argentina'}
-Preguntas_Arte = {1: 'Cuál es la obra artística mexica más grande',
-                  2: 'Cuántas pinturas se conocen de Da Vinci',
-                  3: 'Quién pintó con cadáveres humanos',
-                  4: 'Quién es Hokusai',
-                  5: 'Cual de las siguientes es una obra de Shakespeare',
-                  6: 'Qué ciudad está plasmada en “La noche estrellada” de Van Gogh',
-                  7: 'Qué artista hizo un holograma de Alice Cooper',
-                  8: 'Quien hizo el Martin Fierro',
-                  9: 'Que parte del cuerpo le faltaba a Van Gogh',
-                  10: 'Que color de pintura comia Van Gogh',
-                  11: 'Quien pinto la Mona Lisa',
-                  12: 'Que color sale de la mezcla de: Azul y Amarillo',
-                  13: 'Cuantos notas musicales hay',
-                  14: 'Cuantas sinfonias hizo Beethoven',
-                  15: 'Quien hizo Clair de Lune',
-                  16: 'Quien fue conocido como el rey del Blues',
-                  17: 'Quien fue conocido como el rey del Pop',
-                  18: 'Cuales son los colores primarios',
-                  19: 'Que tipo de color es el Negro',
-                  20: 'Quien pinto la ultima cena'}
-Preguntas_Tematica_1 = {1: 'Cuando salio el primer GTA',
-                        2: 'Cual fue el videojuego con mas premios ganados',
-                        3: 'Que compañia creó el famoso Dark Souls',
-                        4: 'A que juego pertenece Kratos',
-                        5: 'Cual fue el primer Call of Duty',
-                        6: 'Que compañia creó GTA',
-                        7: 'Cuando Pou',
-                        8: 'Que compañia creó Call of Duty',
-                        9: 'A que juego pertenece Arthur Morgan',
-                        10: 'A que juego pertenece Mario',
-                        11: 'Como se llama el hermano de Mario',
-                        12: 'Cuantos Fifas hay',
-                        13: 'Cuantos GTA hay',
-                        14: 'Cuantos Dark Souls hay',
-                        15: 'Como se llama el primer boss de Elden Ring',
-                        16: 'A que juego pertenece Deacon Saint John',
+Preguntas_Tematica_1 = {16: 'A que juego pertenece Deacon Saint John',
                         17: 'Como se llamo el primer Mario',
                         18: 'A que juego pertenece Kirby',
                         19: 'Como se llama el villano de God of War',
@@ -496,6 +421,36 @@ preguntas_cat = {
             "opciones": ['Tom Hardy', 'Paul Anderson', 'Cillian Murphy', 'Finn Cole'],
             "respuesta": 3
         },
+        {
+            "nombre": 'Quien hizo de Thor',
+            "opciones": ['Arnold Schwarzenegger', 'Chris Pratt', 'Chris Hemswort', 'Chris Evans'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Quien dirijio Interestellar',
+            "opciones": ['Cristopher Nolan', 'Vince Gilligan', 'Martin Scorsese', 'Quentin Tarantino'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuantas peliculas hay de Jurasic Park',
+            "opciones": [2, 4, 5, 6],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'En que año salio la primera pelica de Star Wars',
+            "opciones": [1971, 1977, 1983, 1999],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Completa la cancion:\nTell me why\nAint nothin but a heartache\n....',
+            "opciones": ['I never wanna hear you say', 'Tell me why', 'Aint nothin but a mistake', 'Am I your fire?'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Quien protagonizo Forrest Gump',
+            "opciones": ['Robert Dawney Jr.', 'Tom Hanks', 'Robert De Niro', 'Harrison Ford'],
+            "respuesta": 2
+        },
     ],
     'Historia': [
         {
@@ -503,11 +458,315 @@ preguntas_cat = {
             "opciones": [1911, 1913, 1914, 1920],
             "respuesta": 3
         },
+        {
+            "nombre": 'Quien descubrio America',
+            "opciones": ['Americano Vespuccio', 'Ezio Auditore', 'Cristobal Colon', 'Todas son correctas'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando se realizo la Revolucion Industrial',
+            "opciones": ['Siglo XIII', 'Siglo XVIII', 'Siglo XX', 'Siglo XXI'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando se realizo la Revolucion Francesa',
+            "opciones": ['Siglo XIII', 'Siglo XVIII', 'Siglo XX', 'Siglo XXI'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'En que año se creo la primera maquina a vapor',
+            "opciones": [1760, 1765, 1775, 1865],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando cayó el muro de Berlín',
+            "opciones": [1980, 1982, 1989, 1991],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando se descubrio America',
+            "opciones": [1492, 1592, 1489, 1671],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuanto duro la primera guerra mundial',
+            "opciones": ['4 años', '5 años', '10 años', '11 años'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuando se creo la Constitucion Argentina',
+            "opciones": [1797, 1815, 1853, 1880],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando se Independizo USA',
+            "opciones": [1770, 1776, 1820, 1886],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando se Independizo Argentina',
+            "opciones": [1814, 1815, 1816, 1817],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando empezo el Paleolitico',
+            "opciones": ['2.000.000 a.C.', '2.500.000 a.C.', '3.000.000 a.C.', '3.500.000 a.C.'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se extinguieron los dinosaurios',
+            "opciones": ['Un virus', 'Un alien', 'Un mosquito', 'Un meteorito'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cual fue la primera pandemia del mundo',
+            "opciones": ['Peste Bubonica', 'Covid-19', 'Peste Negra', 'Peste de Galeno'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como murio Hitler',
+            "opciones": ['Suicidio', 'Envenenamiento', 'Enfermedad', 'Vejez'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Quien fue Napoleon Bonaparte',
+            "opciones": ['Cocinero Frances', 'Cónsul y emperador de Francia', 'Presidente de los EEUU',
+                         'Libertador de America'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'En que periodo fue el Renacimiento',
+            "opciones": ['Siglos XIV y XVI', 'Siglos XIV y XVII', 'Siglos XV y XVIII', 'Siglos XIV y XXI'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Quien esta en el billete de 100 pesos argentino',
+            "opciones": ['Avellaneda', 'Mitre', 'Roca', 'Perón'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que se festeja el 9 de julio en Argentina',
+            "opciones": ['La Llegada a America', 'La Independencia de Argentina', 'La Independencia de USA',
+                         'La caida del muro de Berlin'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Quien creo la bandera Argentina',
+            "opciones": ['San Martín', 'Perón', 'Mitre', 'Belgrano'],
+            "respuesta": 4
+        },
     ],
     'Arte': [
         {
             "nombre": 'Cuál es la obra artística mexica más grande',
             "opciones": ['Monolito de Tlaltecuhtli', 'Piedra del Sol', 'Frida y Dirgo Rivera', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuántas pinturas se conocen de Da Vinci',
+            "opciones": ['205 obras de arte', '225 obras de arte', '250 obras de arte', '260 obras de arte'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Quién pintó con cadáveres humanos',
+            "opciones": ['Donatello', 'Miguel Angel', 'Da Vinci', 'Theodore Gericault'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Quién es Hokusai',
+            "opciones": ['Un escultor japonés', 'Un pintor y grabador japonés', 'Inventor de la pintura al oleo',
+                         'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual de las siguientes es una obra de Shakespeare',
+            "opciones": ['Romeo y Julieta', 'Hamlet', 'Machbet', 'Todas son correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Qué ciudad está plasmada en “La noche estrellada” de Van Gogh',
+            "opciones": ['Saint-Rémy-de-Provence', 'Londres', 'Clermont-Ferrand', 'Paris'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Qué artista hizo un holograma de Alice Cooper',
+            "opciones": ['Anthony Abdel Karim', 'Takashi Murakami', 'Salvador Dalí', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Quien hizo el Martin Fierro',
+            "opciones": ['Jorge Luis Borges', 'Julio Verne', 'José Hernández', 'Liliana Bodoc'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que parte del cuerpo le faltaba a Van Gogh',
+            "opciones": ['La nariz', 'La oreja', 'Un dedo', 'La lengua'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que color de pintura comia Van Gogh',
+            "opciones": ['Amarillo', 'Naranja', 'Verde', 'Rojo'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Quien pinto la Mona Lisa',
+            "opciones": ['Miguel Angel', 'Leonardo da Vinci', 'Donatello', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que color sale de la mezcla de: Azul y Amarillo',
+            "opciones": ['Rojo', 'Naranja', 'Violeta', 'Ninguna es correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantos notas musicales hay',
+            "opciones": ['DO,RE,MI,LA,SI', ' DO,MI,FA,SOL,LA,SI', 'DO,RE,MI,FA,SOL,LA,SI', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuantas sinfonias hizo Beethoven',
+            "opciones": ['1 sinfonía', '5 sinfonía', '7 sinfonía', '9 sinfonía'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Quien hizo Clair de Lune',
+            "opciones": ['Beethoven', 'Mozart', 'Debussy', 'Luis César Amadori'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Quien fue conocido como el rey del Blues',
+            "opciones": ['Elvis Presley', 'B.B. King', 'Michael Jackson', 'Eric Clapton'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Quien fue conocido como el rey del POP',
+            "opciones": ['Madonna', 'Queen', 'Michael Jackson', 'Eric Clapton'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuales son los colores primarios',
+            "opciones": ['Azul,Amarillo,Violeta', 'Azul,Verde,Rojo', 'Rojo,Amarillo,Azul', 'Rojo,Violeta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que tipo de color es el Negro',
+            "opciones": ['Primario', 'Secundario', 'Terciario', 'Ninguna es correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Quien pinto la ultima cena',
+            "opciones": ['Leonardo Da Vinci', 'Rafael Sanzio', 'Van Gohg', 'Filippo Brunelleschi'],
+            "respuesta": 1
+        },
+    ]
+}
+preguntas_tematica_1 = {
+    "Deporte": [
+        {
+            "nombre": "Cuando salio el primer GTA",
+            "opciones": [1994, 1997, 1999, 2001],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual fue el videojuego con mas premios ganados',
+            "opciones": ['Red Dead Redemption II', 'God of War', 'The Last of Us II', 'Halo'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que compañia creó el famoso Dark Souls',
+            "opciones": ['Rockstar', 'EA', 'Ubisoft', 'From Softwore'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'A que juego pertenece Kratos',
+            "opciones": ['God of War', 'DOOM', 'Halo', 'Call of Duty'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual fue el primer Call of Duty',
+            "opciones": ['Call of Duty', 'Call OF Duty: Modern Warfare', 'Call of Duty: Vanguard',
+                         'Call of Duty: Black Ops'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que compañia creó GTA',
+            "opciones": ['Rockstar', 'EA', 'Ubisoft', 'From Softwore'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que compañia creó GTA',
+            "opciones": [2011, 2012, 2015, 2018],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que compañia creó Call of Duty',
+            "opciones": ['Sega', 'Kojima Productions', 'Activision', 'From Softwore'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'A que juego pertenece Arthur Morgan',
+            "opciones": ['Red Dead Redemption II', 'Sonic', 'Metal Geard Solid', 'Death Stranding'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'A que juego pertenece Mario Bros',
+            "opciones": ['Crash Bandicoot', 'Sonic', 'Super Jump', 'Ninguna es correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el hermano de Mario',
+            "opciones": ['Wario', 'Sonic', 'Luigi', 'Bowser'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuantos Fifas hay',
+            "opciones": [25, 27, 28, 30],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuantos GTA hay',
+            "opciones": [5, 7, 10, 16],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantos Dark Souls hay',
+            "opciones": [1, 2, 3, 4],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como se llama el primer boss de Elden Ring',
+            "opciones": ['Margit, el Augurio Caído', 'Godrick, el Injertado', 'Morgott, rey de los Augurios',
+                         'Godfrey, primer señor del Círculo'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'A que juego pertenece Deacon Saint John',
+            "opciones": ['Days Gone', 'Batman', 'Horizzon Forbidden West', 'Vampyr'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llamo el primer Mario',
+            "opciones": ['Super Mario', 'Mario Galaxy', 'Mario 64', 'Jumpman'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'A que juego pertenece Kirby',
+            "opciones": ['Jumanji', 'Sonic', 'Super Mario', 'Kirby'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el villano principal de God of War(ps4)',
+            "opciones": ['Atenea', 'Thor', 'Baldur', 'Zeus'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando salió Fortnite',
+            "opciones": [2016, 2017, 2018, 2019],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando salió Fortnite',
+            "opciones": [2016, 2017, 2018, 2019],
             "respuesta": 2
         },
     ]
