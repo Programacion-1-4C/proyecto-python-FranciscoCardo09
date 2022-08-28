@@ -8,7 +8,6 @@ OPCIONES2 = ['Videojuegos',
              'Series']
 
 CATEGORIAS_TEMATICAS = ['Videojuegos',
-                        'Marvel',
                         'Series']
 
 CATEGORIAS = [
