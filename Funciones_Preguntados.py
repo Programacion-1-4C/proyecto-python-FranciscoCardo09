@@ -5,7 +5,6 @@ OPCIONES = ['Modo Normal',
             'De 2 a 4 jugadores',
             'Tematicas']
 OPCIONES2 = ['Videojuegos',
-             'Marvel',
              'Series']
 
 CATEGORIAS_TEMATICAS = ['Videojuegos',
