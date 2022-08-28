@@ -1,12 +1,11 @@
 import random
 
 from Funciones_Preguntados import menu_1, menu_2, OPCIONES, OPCIONES2, CATEGORIAS, preguntas, mostrar_info_jugador, \
-    elegir_categoria, categorias_faltan
+    elegir_categoria, categorias_faltan, preguntas_tema_1, CATEGORIAS_TEMATICAS
 
 if __name__ == "__main__":
     incorrectos = 0
     correctos = 0
-
     print('Elegi un modo de juego')
     desicion = menu_1(OPCIONES)
     if desicion == '1':
@@ -60,7 +59,17 @@ if __name__ == "__main__":
                 if not categorias_faltan(info_jugador[i-1]):
                     print(f'Jugador {i} es el ganador')
                     break
+
     elif desicion == '3':
         desicion2 = menu_2(OPCIONES2)
-        if desicion2 == '1':
-            pass
+        while correctos < 20:
+            cat_elegida = desicion2
+            respuesta = preguntas_tema_1(CATEGORIAS_TEMATICAS[cat_elegida])
+            if respuesta:
+                correctos += 1
+            else:
+                incorrectos += 1
+            print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
+            if incorrectos == 3:
+                print('Perdiste, seguí participando')
+                break

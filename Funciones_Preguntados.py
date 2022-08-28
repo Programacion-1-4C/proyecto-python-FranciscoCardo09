@@ -1,4 +1,4 @@
-from Preguntas_Preguntados import preguntas_cat
+from Preguntas_Preguntados import preguntas_cat, preguntas_tematica_1
 import random
 
 OPCIONES = ['Modo Normal',
@@ -7,6 +7,10 @@ OPCIONES = ['Modo Normal',
 OPCIONES2 = ['Videojuegos',
              'Marvel',
              'Series']
+
+CATEGORIAS_TEMATICAS = ['Videojuegos',
+                        'Marvel',
+                        'Series']
 
 CATEGORIAS = [
     'Deporte',
@@ -28,7 +32,8 @@ def menu_1(OPCIONES):
 def menu_2(OPCIONES2):
     for num, opciones in enumerate(OPCIONES2):
         print(f'{num + 1}. {opciones}')
-    decision_2 = input(f'Elija una tematica (1-{len(OPCIONES2)}): ')
+    decision_2 = int(input(f'Elija una tematica (1-{len(OPCIONES2)}): '))
+    decision_2 -= 1
     return decision_2
 
 
@@ -47,6 +52,21 @@ def preguntas(categoria):
     texto_opciones = ""
     for i, opcion in enumerate(pregunta["opciones"]):
         texto_opciones += f"{i+1}- {opcion}\n"
+    respuesta = int(input(texto_opciones + "\n>>>")) == pregunta["respuesta"]
+    print("Correcto" if respuesta else "Incorrecto")
+    return respuesta
+
+
+def preguntas_tema_1(categoria):
+    preguntas_tematica = preguntas_tematica_1[categoria]
+    if len(preguntas_tematica) == 0:
+        return True
+    numero_random_2 = random.randint(0, len(preguntas_tematica) - 1)
+    pregunta = preguntas_tematica[numero_random_2]
+    print(pregunta["nombre"])
+    texto_opciones = ""
+    for i, opcion in enumerate(pregunta["opciones"]):
+        texto_opciones += f"{i + 1}- {opcion}\n"
     respuesta = int(input(texto_opciones + "\n>>>")) == pregunta["respuesta"]
     print("Correcto" if respuesta else "Incorrecto")
     return respuesta

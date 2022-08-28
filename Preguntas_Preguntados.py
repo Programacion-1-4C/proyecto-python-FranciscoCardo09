@@ -1,48 +1,3 @@
-Preguntas_Tematica_1 = {16: 'A que juego pertenece Deacon Saint John',
-                        17: 'Como se llamo el primer Mario',
-                        18: 'A que juego pertenece Kirby',
-                        19: 'Como se llama el villano de God of War',
-                        20: 'Cuando salió Fortnite',
-                        21: 'Cuando salio tetris',
-                        22: 'Como se llama la compañia de Metal Gear Solid',
-                        23: 'Como le dicen al personaje principal de Metal Gear Solid',
-                        24: 'Cuantos Halo hay',
-                        25: 'Como se llama el personaje principal de Halo',
-                        26: 'Cual de los siguientes no es un personaje de Resident Evil',
-                        27: 'Como se llama el personaje principal de Resident Evil 4',
-                        28: 'Cuantos Resident Evil hay',
-                        29: 'Como se llama el personaje principal de Ghost of Tsuyima',
-                        30: 'Como el el apodo del personaje principal de Ghost of Tsuyima',
-                        31: 'Quien mató a Kratos',
-                        32: 'Cuantos Call Of Duty hay',
-                        33: 'Cuando salio el primer Playstation',
-                        34: 'Cuando salio la primer Xbox',
-                        35: 'Cuando salio el primer Nintendo',
-                        36: 'Que juego Gano el Goty 2015',
-                        37: 'Que juego Gano el Goty 2016',
-                        38: 'Que juego Gano el Goty 2017',
-                        39: 'Que juego Gano el Goty 2018',
-                        40: 'Que juego Gano el Goty 2019',
-                        41: 'Que juego Gano el Goty 2020',
-                        42: 'Que juego Gano el Goty 2021',
-                        43: 'Cual de los siguientes no es exclusivo de Playstation',
-                        44: 'Cual de los siguientes no es exclusivo de Xbox',
-                        45: 'Cual de los siguientes no es exclusivo de Nintendo',
-                        47: 'Que enfermedad sufre el personaje principal de HellBlade',
-                        48: 'Cual de los siguientes es un personaje de Mario Bros',
-                        49: 'Que jugador aparecio en la portada de Fifa 14',
-                        50: 'Que jugador aparecio en la portada de Fifa 15',
-                        51: 'Que jugador aparecio en la portada de Fifa 16',
-                        52: 'Que jugador aparecio en la portada de Fifa 17',
-                        53: 'Que jugador aparecio en la portada de Fifa 18',
-                        54: 'Que jugador aparecio en la portada de Fifa 19',
-                        55: 'Que jugador aparecio en la portada de Fifa 20',
-                        56: 'Que jugador aparecio en la portada de Fifa 21',
-                        57: 'Que jugador aparecio en la portada de Fifa 22',
-                        58: 'Que jugador aparecio en la portada de Fifa 23',
-                        59: 'Por que Kirby se come todo',
-                        60: 'Cuantos DOOM hay'}
-
 preguntas_cat = {
     "Deporte": [
         {
@@ -661,7 +616,7 @@ preguntas_cat = {
     ]
 }
 preguntas_tematica_1 = {
-    "Deporte": [
+    "Videojuegos": [
         {
             "nombre": "Cuando salio el primer GTA",
             "opciones": [1994, 1997, 1999, 2001],
@@ -767,6 +722,267 @@ preguntas_tematica_1 = {
         {
             "nombre": 'Cuando salió Fortnite',
             "opciones": [2016, 2017, 2018, 2019],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando salio tetris',
+            "opciones": [1984, 1994, 2002, 2003],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama la compañia de Metal Gear Solid',
+            "opciones": ['Diamond Dogs', 'Bones', 'Bridges', 'Kojima'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como le dicen al personaje principal de Metal Gear Solid',
+            "opciones": ['Skull', 'Boss', 'Porter', 'Ninguna es correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuantos Halo hay',
+            "opciones": [10, 15, 20, 22],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Halo',
+            "opciones": ['Master Chief ', 'General Frau Engel', 'Blazkowicz ', 'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual de los siguientes no es un personaje de Resident Evil',
+            "opciones": ['Chris Redfield', 'Jill Valentine', 'Leon S. Kennedy', 'Carl Manfred'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Resident Evil 4',
+            "opciones": ['Chris Redfield', 'Jill Valentine', 'Leon S. Kennedy', 'Claire Redfield'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuantos Resident Evil hay',
+            "opciones": [13, 14, 15, 16],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Ghost of Tsushima',
+            "opciones": ['Yuna', 'Jin Sakai', 'Khotun Kan', 'Ujimasa Yarikawa'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como el el apodo del personaje principal de Ghost of Tsushima',
+            "opciones": ['El Demonio de Tsushima', 'El Lobo', 'El Fantasma', 'El Salvador de Tsushima'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como le dicen a Kratos',
+            "opciones": ['El Fantasma de Esparta', 'El Dios de la Guerra', 'Asesino de Dioses', 'Todas son correctas'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantos Call Of Duty hay',
+            "opciones": [20, 21, 24, 25],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuando salio el primer Playstation',
+            "opciones": [1990, 1994, 1999, 2001],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando salio la primer Xbox',
+            "opciones": [1990, 1994, 1999, 2001],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuando salio el primer Nintendo',
+            "opciones": [1984, 1994, 1998, 2000],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2014',
+            "opciones": ['Dragon Age: Inquisition', 'Dark Souls II', 'Bayonetta 2',
+                         'La Tierra Media: Sombras de Mordor'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2015',
+            "opciones": ['Bloodborne', 'The Witcher 3: Wild Hunt', 'Fallout 4', 'Metal Gear Solid V: The Phantom Pain'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2016',
+            "opciones": ['Titanfall 2', 'Doom', 'Overwatch', 'Uncharted 4: El desenlace del ladrón'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2017',
+            "opciones": ['PlayerUnknown´s Battlegrounds', 'Persona 5', 'Horizon Zero Dawn',
+                         'The Legend of Zelda: Breath of the Wild'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2018',
+            "opciones": ['Spider-Man', 'Celeste', 'Red Dead Redemption 2', 'God of War'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2019',
+            "opciones": ['Resident Evil 2 Remake', 'Control', 'Sekiro: Shadows Die Twice', 'Death Stranding'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2020',
+            "opciones": ['Ghost of tsushima', 'The Last of Us Part II', 'Final Fantasy VII Remake', 'Hades'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que juego Gano el Goty 2021',
+            "opciones": ['It Takes Two', 'Metroid Dread', 'Resident Evil Village',
+                         'Ratchet & Clank: Una Dimensión Aparte'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual de los siguientes no es exclusivo de Playstation',
+            "opciones": ['God of War', 'Spider-Man', 'Horizon Zero Dawn', 'Forza Horizon'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cual de los siguientes no es exclusivo de Xbox',
+            "opciones": ['Sea of Thieves', 'Halo', 'Death Stranding', 'Forza Horizon'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cual de los siguientes no es exclusivo de Nintendo',
+            "opciones": ['The Legend of Zelda: Breath of the Wild', 'Mario Bros', 'Pokemon', 'Forza Horizon'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que enfermedad sufre el personaje principal de HellBlade',
+            "opciones": ['Esquizofrenia', 'Alzeheimer', 'Cancer', 'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual de los siguientes es un personaje de Mario Bros',
+            "opciones": ['Bowser', 'Yoshi', 'Toad', 'Todas son correcta'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Por que Kirby se come todo',
+            "opciones": ['Tiene Hambre', 'Le comieron la torta', 'Esta loco', 'Esta en volumen'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuantos DOOM hay',
+            "opciones": [13, 14, 15, 16],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuantos DOOM hay',
+            "opciones": [13, 14, 15, 16],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que jugador aparecio en la portada de Fifa 15',
+            "opciones": ['Messi', 'Ronaldo', 'Maradona', 'Neymar'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que jugador aparecio en la portada de Fifa 16',
+            "opciones": ['Messi', 'Ronaldo', 'Griezmann', 'Iniesta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que jugador aparecio en la portada de Fifa 20',
+            "opciones": ['Messi', 'Eden Hazard', 'Mbappe', 'Kante'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que jugador aparecio en la portada de Fifa 21',
+            "opciones": ['Ronaldo', 'Eden Hazard', 'Mbappe', 'Haland'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de GTA San Andreas',
+            "opciones": ['Toni cipriani', 'Tommy Vercetti', 'Franklin Clinton', 'Cj'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Mafia I',
+            "opciones": ['Don Salieri', 'Tommy Angelo', 'Paulie', 'Sam'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de The Last of Us',
+            "opciones": ['Don Tommy Miller', 'Joel Miller', 'Ellie', 'Dina'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Red Dead Redemtion 2',
+            "opciones": ['Charles Smith', 'Javier Escuella', 'John Marston', 'Arthur Morgan'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Death Stranding',
+            "opciones": ['Sam Porter Bridges', 'Cliff Unger', 'Deadman', 'Die-Hardman'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Que animal es el personaje de Stray',
+            "opciones": ['Un pez', 'Un gato', 'Una paloma', 'Un perro'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando salió el último Far Cry',
+            "opciones": [2001, 2012, 2020, 2021],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cual de los siguientes no es un personaje de Assassins Creed',
+            "opciones": ['Altair', 'Ezio Auditore', 'Jaccob Frye', 'Nathan Drake'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Que catastrofe hay en Fallout 4',
+            "opciones": ['Guerra Mundial', 'Virus', 'Bomba atómica', 'Un meteorito'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuando salio Call of Duty: Advanced Warfare',
+            "opciones": [2011, 2014, 2016, 2019],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuando salio Elden Ring',
+            "opciones": [2001, 2012, 2020, 2022],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Sobre que paradoja habla Bioshock Infinite',
+            "opciones": ['El gato de Scrödinger', 'La paradoja del abuelo', 'Los viajes en el tiempo',
+                         'Paradoja de los gemelos'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuantos Bioshock hay',
+            "opciones": [1, 2, 3, 4],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como se llaman los personajes principales de detroit become human',
+            "opciones": ['Connor,Markus,Kara', 'Connor,John,Kara', 'John,Kara', 'Frank,Mark,Zofia'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de Tomb Raider',
+            "opciones": ['Lara Croft', 'Kara Croft', 'Ashley Wild', 'Aloy Croft'],
+            "respuesta": 1
+        },
+    ],
+    "Marvel": [
+        {
+            "nombre": "Cuando salio el primer GTA",
+            "opciones": [1994, 1997, 1999, 2001],
             "respuesta": 2
         },
     ]
