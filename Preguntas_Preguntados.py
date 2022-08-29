@@ -1177,5 +1177,45 @@ preguntas_tematica_1 = {
             "opciones": ['Un banco', 'Una tienda', 'Una base militar', 'Una concesionaria'],
             "respuesta": 1
         },
+        {
+            "nombre": 'Cual de los siguientes no es un personaje de "La casa de Papel"',
+            "opciones": ['Washington', 'Berlín', 'Tokyo', 'Moscú'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual de los siguientes no es un personaje de "Los simuladores"',
+            "opciones": ['Mario Santos', 'Carlos García', 'Gabriel Medina', 'Franco Milazzo'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cómo se llama el jefe de policías de "El Marginal"',
+            "opciones": ['Caccece', 'Capece', 'Baccacece', 'Cacceca'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Qué animales tiene El Sapo en su celda de "El Marginal"',
+            "opciones": ['Condor', 'Halcones', 'Búhos', 'Palomas'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Para no boxear con Jorge Krakatoa Pérez, por quién se hace pasar Pepe de "Casados con hijos"',
+            "opciones": ['Dardo el jardinero', 'Dardo el plomero', 'Dardo el taxista', 'Dardo el quiosquero'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Qué materia de la secundaria adeuda Moni de "Casados con hijos"',
+            "opciones": ['Bilogía', 'Arte', 'Historia', 'Matemática'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuántos premios Emmy ganó “Game of Thrones” en total',
+            "opciones": [1, 10, 27, 59],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuáles de estos son no los colores de la Casa Baratheon de “Game of Thrones”',
+            "opciones": ['Negro y rojo', 'Negro y oro', 'Rojo y oro', 'Blanco y verde'],
+            "respuesta": 2
+        },
     ]
 }
