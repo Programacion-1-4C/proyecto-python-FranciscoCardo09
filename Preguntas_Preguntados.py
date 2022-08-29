@@ -979,11 +979,203 @@ preguntas_tematica_1 = {
             "respuesta": 1
         },
     ],
-    "Marvel": [
+    "Series": [
         {
-            "nombre": "Cuando salio el primer GTA",
-            "opciones": [1994, 1997, 1999, 2001],
+            "nombre": 'Cuantas temporadas tiene "The Walking Dead"',
+            "opciones": [9, 10, 11, 12],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de "Breaking Bad"',
+            "opciones": ['Jesse Pinkman', 'Walter White', 'Saul Goodman', 'Ninguna es correcta'],
             "respuesta": 2
+        },
+        {
+            "nombre": 'Cual de las siguientes no es una serie de Disney',
+            "opciones": ['Obiwan', 'Ms. Marvel', 'She Hulk', 'Peacemaker'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el superheroe principal de la serie "Peacemaker"',
+            "opciones": ['Peacemaker', 'Invencible', 'Deep', 'Homelander'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Qué actriz protagoniza “Las escalofriantes aventuras de Sabrina”',
+            "opciones": ['Lucy Davis', 'Melissa Joan Hart', 'Kiernan Shipka', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cómo se llaman las barritas de chocolate que aparecen en varios capítulos de “Lost”',
+            "opciones": ['Apollo', 'Oceanic', 'Jumbo', 'Fallout'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'En qué serie sale un multimillonario tecnólogo inspirado en Elon Musk',
+            "opciones": ['Future Man', 'Salvation', 'The Orville', 'Todas son correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual es la comida favorita de "Once" de "Stranger Things"',
+            "opciones": ['Hamburguesas', 'Waffles', 'Pizza', 'Donas'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Como se llama el bate de Negan en "The Walking Dead"',
+            "opciones": ['Wendy', 'Woody', 'Maggie', 'Lucille'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'En donde se encuentran una personaje parecida a Paul McCartney en "Los Simuladores"',
+            "opciones": ['Concesionario de autos', 'Carnicería', 'Disquería', 'Partido de futbol'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual es el nivel de pureza de la metanfetamina producida por Walter White en "Breaking Bad"',
+            "opciones": ['85%', '91%', '99%', '45%'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Como muere el "Rey de la Noche" en "Game of Thrones"',
+            "opciones": ['Lo asesina un adolescente', 'Jon Snow le clava un puñal', 'Lo elimina un dragon',
+                         'Lo atacan todos los reinos por una tregua'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuál de estos no es el título de un capítulo de "Black Mirror"',
+            "opciones": ['Shut up and dance', 'Broken Crystal', 'White Bear', 'Todas son correcta'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cómo se llamó la mansión donde encarcelaron a Escobar en "Narcos"',
+            "opciones": ['La Catedral', 'El Palacio', 'La Ruina', 'No tenía nombre'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuántas son las principales casas en "Game of Thrones"',
+            "opciones": [5, 6, 7, 8],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cómo se llama el restaurante favorito de Frank Underwood en "House of Cards"',
+            "opciones": ['Los pollos hermanos', 'Jhonny´s Wings', 'Freddy´s BBQ Joint', 'Charlie Palmer Steak'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cómo se llama el grupo de piratas informáticos en "Mr. Robot"',
+            "opciones": ['esociety', 'Robot Society', 'fsociety', 'dsociety'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Cuál era el vuelo de "Lost"',
+            "opciones": ['Vuelo 815', 'Vuelo 814', 'Vuelo 819', 'Vuelo 805'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cuál es el símbolo de "Bridgerton"',
+            "opciones": ['Una mariposa', 'Un caballo', 'Una abeja', 'Una corona'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'A qué año llega Luther cuando viaja al pasado en "The Umbrella Academy"',
+            "opciones": [1952, 1953, 1962, 1963],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'En qué años se desarrolla la historia de "Gambito de dama"',
+            "opciones": ['Entre los años 20s y 30s', 'Entre los años 40s y 50s', 'Entre los años 50s y 60s',
+                         'Entre los años 70s y 80s'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Quien hace de "Sherlock"',
+            "opciones": ['Benedict Cumberbatch', 'Bryan Craston', 'Ryan Gosling', 'Ninguna es correcta'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuantas temporadas tiene "Peaky Blinders"',
+            "opciones": [4, 6, 8, 10],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cual no es integrante de la familia shelby',
+            "opciones": ['Arthur', 'Polly', 'Thomas', 'Frank'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Cuantas temporadas tiene "Friends"',
+            "opciones": [9, 10, 12, 15],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Cómo se llama el personaje principal de "The Walking Dead"',
+            "opciones": ['Rick Grimes', 'Negan', 'Daryl Dixon', 'Shane Walsh'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Como se llama el actor argentino de "La Casa de Papel"',
+            "opciones": ['Rodrigo Noya', 'Rodrigo De La Serna', 'Pablo Rago', 'Gonzalo Heredia'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que personaje se va al "Upside Down" en "Starger Things"',
+            "opciones": ['Will', 'Billy', 'Rustin', 'Mike'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cuantas temporadas tiene "Black Mirror"',
+            "opciones": [1, 3, 5, 6],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'Termina el titulo: "Apache, La vida de.....',
+            "opciones": ['Maradona', 'Pablo Escobar', 'Un jugador extraordinario', 'Carlos Tevez'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Termina el titulo: "Better Call.....',
+            "opciones": ['Saul', 'Jesse', 'Mike', 'Frank'],
+            "respuesta": 1
+        },
+        {
+            "nombre": '"GO, Vive a tu manera" es',
+            "opciones": ['Un documental', 'Un thriller', 'Un musical', 'Ninguna es correcta'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'De que pais se escapa "Esty" en "Poco Ortodoxa"',
+            "opciones": ['Francia', 'Inglaterra', 'Gales', 'Alemania'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Como se llama el personaje principal de "Tiger King"',
+            "opciones": ['Joe Exotic', 'Joe King', 'Bob Exotic', 'Bob Danger'],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Termina el titulo: "Game of.....',
+            "opciones": ['Gods', 'Money', 'Lives', 'Thrones'],
+            "respuesta": 4
+        },
+        {
+            "nombre": 'Termina el titulo: "Stranger.....',
+            "opciones": ['People', 'Country', 'Things', 'Animals'],
+            "respuesta": 3
+        },
+        {
+            "nombre": 'En que año salió "Friends"',
+            "opciones": [1994, 1998, 2000, 2004],
+            "respuesta": 1
+        },
+        {
+            "nombre": 'Cual es el juego en "Gambito de Dama"',
+            "opciones": ['La casita robada', 'Ajedrez', 'Chin Chon', 'Truco'],
+            "respuesta": 2
+        },
+        {
+            "nombre": 'Que roban en "La casa de Papel"',
+            "opciones": ['Un banco', 'Una tienda', 'Una base militar', 'Una concesionaria'],
+            "respuesta": 1
         },
     ]
 }
