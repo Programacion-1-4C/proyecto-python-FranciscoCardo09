@@ -1,7 +1,7 @@
 import random
 
 from Funciones_Preguntados import menu_1, menu_2, OPCIONES, OPCIONES2, CATEGORIAS, preguntas, mostrar_info_jugador, \
-    elegir_categoria, categorias_faltan, preguntas_tema_1, CATEGORIAS_TEMATICAS
+    elegir_categoria, categorias_faltan, CATEGORIAS_TEMATICAS, preguntas_tematicas
 
 if __name__ == "__main__":
     incorrectos = 0
@@ -64,12 +64,12 @@ if __name__ == "__main__":
         desicion2 = menu_2(OPCIONES2)
         while correctos < 20:
             cat_elegida = desicion2
-            respuesta = preguntas_tema_1(CATEGORIAS_TEMATICAS[cat_elegida])
+            respuesta = preguntas_tematicas(CATEGORIAS_TEMATICAS[cat_elegida])
             if respuesta:
                 correctos += 1
             else:
                 incorrectos += 1
-            print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3')
+            print(f'Respuestas correctas: {correctos}/20. Respuestas incorrectas: {incorrectos}/3\n')
             if incorrectos == 3:
                 print('Perdiste, seguí participando')
                 break

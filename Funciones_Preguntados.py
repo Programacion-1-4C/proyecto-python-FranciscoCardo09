@@ -55,7 +55,7 @@ def preguntas(categoria):
     return respuesta
 
 
-def preguntas_tema_1(categoria):
+def preguntas_tematicas(categoria):
     preguntas_tematica = preguntas_tematica_1[categoria]
     if len(preguntas_tematica) == 0:
         return True
