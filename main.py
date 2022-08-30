@@ -37,7 +37,7 @@ if __name__ == "__main__":
                 mostrar_info_jugador(info_jugador[i-1])
                 turno_actual = i
                 while i == turno_actual:
-                    print(f'Turno del jugador {i}')
+                    print(f'\nTurno del jugador {i}')
                     cat_elegida = random.randint(0, CORONITA)
                     if cat_elegida != CORONITA:
                         respuesta = preguntas(CATEGORIAS[cat_elegida])

@@ -82,7 +82,7 @@ preguntas_cat = {
         },
         {
             "nombre": "Cuanto duro el partido de tenis mas largo de la historia",
-            "opciones": ['9:45hs', '10hs', '11:30hs', '1hs'],
+            "opciones": ['9:45hs', '10hs', '11:30hs', '11hs'],
             "respuesta": 4
         },
         {
@@ -91,9 +91,9 @@ preguntas_cat = {
             "respuesta": 4
         },
         {
-            "nombre": "Donde se creo el tenis",
+            "nombre": "Cuantos jugadores hay en un partido de futbol por equipo en cancha",
             "opciones": [6, 7, 9, 11],
-            "respuesta": 2
+            "respuesta": 4
         },
         {
             "nombre": "Quién ganó 4 mundiales consecutivos en la Fórmula 1",
