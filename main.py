@@ -1,5 +1,4 @@
 import random
-
 from Funciones_Preguntados import menu_1, menu_2, OPCIONES, OPCIONES2, CATEGORIAS, preguntas, mostrar_info_jugador, \
     elegir_categoria, categorias_faltan, CATEGORIAS_TEMATICAS, preguntas_tematicas
 
@@ -27,7 +26,6 @@ if __name__ == "__main__":
         info_jugador = [{x: False for x in CATEGORIAS} for i in range(rango)]
         i = 1
         CORONITA = len(CATEGORIAS)
-
         while i != 0:
             if i == rango:
                 i = 1
@@ -55,11 +53,9 @@ if __name__ == "__main__":
                         correctos = 3
                         elegir_categoria(correctos, info_jugador[i-1])
                         i += 1
-
                 if not categorias_faltan(info_jugador[i-1]):
                     print(f'Jugador {i} es el ganador')
                     break
-
     elif desicion == '3':
         desicion2 = menu_2(OPCIONES2)
         while correctos < 20:
