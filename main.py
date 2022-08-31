@@ -24,7 +24,7 @@ if __name__ == "__main__":
     if desicion == '2':
         cant_de_jugadores = int(input('Cuantos jugadores van a jugar?(Maximo 4 jugadores)\n>>>'))
         rango = cant_de_jugadores + 1
-        info_jugador = [{x: False for x in CATEGORIAS}] * rango
+        info_jugador = [{x: False for x in CATEGORIAS} for i in range(rango)]
         i = 1
         CORONITA = len(CATEGORIAS)
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
             else:
                 correctos = 0
                 incorrectos = 0
-                mostrar_info_jugador(info_jugador[i-1])
+                mostrar_info_jugador(info_jugador[i-1], i)
                 turno_actual = i
                 while i == turno_actual:
                     print(f'\nTurno del jugador {i}')

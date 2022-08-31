@@ -35,7 +35,8 @@ def menu_2(OPCIONES2):
     return decision_2
 
 
-def mostrar_info_jugador(jugador):
+def mostrar_info_jugador(jugador, num_jugador):
+    print(f"datos del jugador {num_jugador}")
     for categoria, valor in jugador.items():
         print(f"{categoria}: {'Ganado' if valor else 'No ganado'}")
 
