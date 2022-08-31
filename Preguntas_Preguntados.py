@@ -1204,7 +1204,7 @@ preguntas_tematica_1 = {
         },
         {
             "nombre": 'Qué materia de la secundaria adeuda Moni de "Casados con hijos"',
-            "opciones": ['Bilogía', 'Arte', 'Historia', 'Matemática'],
+            "opciones": ['Biología', 'Arte', 'Historia', 'Matemática'],
             "respuesta": 1
         },
         {

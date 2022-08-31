@@ -17,7 +17,7 @@ CATEGORIAS = [
     'Entretenimiento',
     'Historia',
     'Arte'
-]
+              ]
 
 
 def menu_1(OPCIONES):
